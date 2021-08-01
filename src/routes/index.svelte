@@ -1,7 +1,6 @@
 <script>
 	import translations from '../translations';
 	import { language } from '../stores';
-	import { onMount } from 'svelte';
 
 	let t = translations.hero_greeting;
 </script>
@@ -10,4 +9,4 @@
 	<title>Mircea Casapu - Full Stack Web Developer</title>
 </svelte:head>
 
-<h1>{t[$language]}</h1>
+<h1 class="text-lg text-center">{t[$language]}</h1>
