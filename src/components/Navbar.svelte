@@ -1,6 +1,7 @@
 <script>
 	import translations from '../translations';
 	import { language } from '../stores';
+	import DarkMode from '../components/DarkMode.svelte';
 
 	let t = translations.navbar;
 
@@ -21,5 +22,18 @@
 	<div class="items-end">
 		<button class="mx-2.5" on:click={() => changeLanguage('ro')}>🇷🇴 RO</button>
 		<button class="mx-2.5" on:click={() => changeLanguage('en')}>🇬🇧 EN</button>
+		<DarkMode>Toggle</DarkMode>
 	</div>
 </nav>
+
+<style>
+	:global(body) {
+		background-color: #f2eee2;
+		color: #0084f6;
+		transition: background-color 0.3s
+	}
+	:global(body.dark-mode) {
+		background-color: #1d3040;
+		color: #bfc2c7;
+	}
+</style>
