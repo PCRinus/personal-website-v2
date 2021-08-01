@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import translations from '../translations';
+	import { language } from '../stores';
+	import { onMount } from 'svelte';
+
+	let t = translations.hero_greeting;
+</script>
+
+<svelte:head>
+	<title>Mircea Casapu - Full Stack Web Developer</title>
+</svelte:head>
+
+<h1>{t[$language]}</h1>
