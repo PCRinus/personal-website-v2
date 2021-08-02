@@ -10,8 +10,8 @@
 	}
 </script>
 
-<nav class="flex justify-between">
-	<div class="items-start">
+<nav class="flex justify-between w-full p-4">
+	<div class="items-start self-center">
 		<a class="mx-2.5" href=".">{t.profile[$language]}</a>
 		<a class="mx-2.5" href="experience">{t.experience[$language]}</a>
 		<a class="mx-2.5" href="projects">{t.projects[$language]}</a>
@@ -19,9 +19,12 @@
 		<a class="mx-2.5" href="contact">{t.contact[$language]}</a>
 	</div>
 
-	<div class="items-end">
-		<button class="mx-2.5" on:click={() => changeLanguage('ro')}>🇷🇴 RO</button>
-		<button class="mx-2.5" on:click={() => changeLanguage('en')}>🇬🇧 EN</button>
+	<div class="items-end self-center">
+		{#if $language === 'en'}
+			<button class="mx-2.5" on:click={() => changeLanguage('ro')}>🇷🇴 RO</button>
+		{:else}
+			<button class="mx-2.5" on:click={() => changeLanguage('en')}>🇬🇧 EN</button>
+		{/if}
 		<DarkMode>Toggle</DarkMode>
 	</div>
 </nav>
@@ -30,7 +33,7 @@
 	:global(body) {
 		background-color: #f2eee2;
 		color: #0084f6;
-		transition: background-color 0.3s
+		transition: background-color 0.3s;
 	}
 	:global(body.dark-mode) {
 		background-color: #1d3040;
