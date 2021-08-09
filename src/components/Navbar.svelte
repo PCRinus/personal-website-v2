@@ -17,7 +17,6 @@
 		<a class="mx-2.5" href=".">{t.profile[$language]}</a>
 		<a class="mx-2.5" href="experience">{t.experience[$language]}</a>
 		<a class="mx-2.5" href="projects">{t.projects[$language]}</a>
-		<a class="mx-2.5" href="abilities">{t.abilities[$language]}</a>
 		<a class="mx-2.5" href="contact">{t.contact[$language]}</a>
 	</div>
 
