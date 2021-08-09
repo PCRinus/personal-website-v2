@@ -11,4 +11,14 @@
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
+
+	:global(body) {
+		background-color: white;
+		color: black;
+		transition: background-color 0.3s;
+	}
+	:global(body.dark-mode) {
+		background-color: #1d3040;
+		color: white;
+	}
 </style>

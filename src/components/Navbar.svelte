@@ -1,7 +1,9 @@
 <script>
 	import translations from '../translations';
-	import { language } from '../stores';
-	import DarkMode from '../components/DarkMode.svelte';
+	import { language, theme } from '../stores';
+	import DarkModeButton from '../components/DarkMode.svelte';
+	import Dark from '../icons/Dark.svelte';
+	import Light from '../icons/Light.svelte';
 
 	let t = translations.components.navbar;
 
@@ -25,18 +27,12 @@
 		{:else}
 			<button class="mx-2.5" on:click={() => changeLanguage('en')}>🇬🇧 EN</button>
 		{/if}
-		<DarkMode>Toggle</DarkMode>
+		<DarkModeButton>
+			{#if $theme === 'light'}
+				<Light />
+			{:else}
+				<Dark />
+			{/if}
+		</DarkModeButton>
 	</div>
 </nav>
-
-<style>
-	:global(body) {
-		background-color: #f2eee2;
-		color: #0084f6;
-		transition: background-color 0.3s;
-	}
-	:global(body.dark-mode) {
-		background-color: #1d3040;
-		color: #bfc2c7;
-	}
-</style>
