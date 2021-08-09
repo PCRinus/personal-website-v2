@@ -3,7 +3,7 @@
 	import { language } from '../stores';
 	import DarkMode from '../components/DarkMode.svelte';
 
-	let t = translations.navbar;
+	let t = translations.components.navbar;
 
 	function changeLanguage(input_language) {
 		$language = input_language;

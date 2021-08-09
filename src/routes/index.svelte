@@ -2,7 +2,7 @@
 	import translations from '../translations';
 	import { language } from '../stores';
 
-	let t = translations.hero_greeting;
+	let t = translations.pages.index.hero_greeting;
 </script>
 
 <svelte:head>
