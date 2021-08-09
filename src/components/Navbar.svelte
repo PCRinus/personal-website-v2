@@ -22,9 +22,9 @@
 
 	<div class="items-end self-center">
 		{#if $language === 'en'}
-			<button class="mx-2.5" on:click={() => changeLanguage('ro')}>🇷🇴 RO</button>
+			<button class="mx-2.5" on:click={() => changeLanguage('ro')}>🇬🇧 EN</button>
 		{:else}
-			<button class="mx-2.5" on:click={() => changeLanguage('en')}>🇬🇧 EN</button>
+			<button class="mx-2.5" on:click={() => changeLanguage('en')}>🇷🇴 RO</button>
 		{/if}
 		<DarkModeButton>
 			{#if $theme === 'light'}

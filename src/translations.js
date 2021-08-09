@@ -120,7 +120,8 @@ export default {
 					}
 				},
 				job_description: {
-					en: 'Reprehenderit magna officia culpa aliquip officia culpa cupidatat ad fugiat reprehenderit.',
+					en:
+						'Reprehenderit magna officia culpa aliquip officia culpa cupidatat ad fugiat reprehenderit.',
 					ro: 'Ullamco in occaecat dolor culpa officia quis.'
 				},
 				used_technologies: {
@@ -128,6 +129,61 @@ export default {
 					ro: 'Et ad et et culpa cupidatat in Lorem in voluptate sit dolore anim amet.'
 				}
 			}
-		]
+		],
+		projects: [
+			{
+				title: {
+					en: "Bachelor's project - educativ.io",
+					ro: 'Proiect de diploma'
+				},
+				description: {
+					en:
+						"educativ.io was my Bachelor's Project. Initially, it was envisioned as an online mentoring platform, but it evolved over time as a full fledged eLearning platform, that allows users to search and view various lessons over various topics. It also allows users to add and manage their own lessons using an integrated Markdown editor.",
+					ro:
+						'educativ.io a fost proiectul meu de licență. Inițial, a fost concepută ca o platformă de mentorat online, dar a evoluat in timp ca o platformă completă de eLearning, care permite utilizatorilor să caute și să vizualizeze diverse lecții pe diferite teme. Aceasta permite, de asemenea, utilizatorilor să adauge și să gestioneze propriile lecții folosind un editor Markdown integrat.'
+				},
+				used_technologies: {
+					en: '',
+					ro: ''
+				},
+				github_link: 'https://github.com/PCRinus/educativ-io'
+			},
+			{
+				title: {
+					en: '',
+					ro: ''
+				},
+				description: {
+					en: '',
+					ro: ''
+				},
+				used_technologies: {
+					en: '',
+					ro: ''
+				},
+				github_link: ''
+			},
+			{
+				title: {
+					en: '',
+					ro: ''
+				},
+				description: {
+					en: '',
+					ro: ''
+				},
+				used_technologies: {
+					en: '',
+					ro: ''
+				},
+				github_link: ''
+			}
+		],
+		contact: {
+			form_header: {
+				en: 'Get in touch',
+				ro: 'Contactează-mă'
+			}
+		}
 	}
 };
