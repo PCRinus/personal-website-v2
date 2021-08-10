@@ -183,6 +183,19 @@ export default {
 			form_header: {
 				en: 'Get in touch',
 				ro: 'Contactează-mă'
+			},
+			form_label_name: {
+				en: 'Name',
+				ro: 'Nume'
+			},
+			form_label_email: 'Email',
+			form_label_message: {
+				en: 'Message',
+				ro: 'Mesaj'
+			},
+			form_submit_button: {
+				en: 'Submit',
+				ro: 'Trimite'
 			}
 		}
 	}
