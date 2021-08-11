@@ -192,18 +192,21 @@ export default {
 				},
 				{
 					title: {
-						en: '',
-						ro: ''
+						en: 'Personal Webiste V2',
+						ro: 'Website Personal V2'
 					},
 					description: {
-						en: '',
-						ro: ''
+						en:
+							'You are looking at it right now. It was made to be easier to expand with new content, and to learn new technologies. It will also be a sandbox for new ideas.',
+						ro:
+							'Te uiți la acest proiect chiar acum. A fost făcut să fie mai ușor să fie extins cu conținut nou și să învaț noi tehnologii. De asemenea, va fii un nou loc de joaca pentru a testa noi idei.'
 					},
 					used_technologies: {
-						en: '',
-						ro: ''
+						en: 'Svelte(SvelteKit), Tailwind CSS, Netlify',
+						ro: 'Svelte(SvelteKit), Tailwind CSS, Netlify'
 					},
-					github_link: ''
+					github_link: 'https://github.com/PCRinus/personal-webiste-V2',
+					website_link: 'no link available yet'
 				}
 			]
 		},
