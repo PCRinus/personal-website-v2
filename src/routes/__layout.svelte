@@ -1,11 +1,25 @@
 <script>
-	import Navbar from '../components/Navbar.svelte';
+	import Navbar from '../components/navbar/Navbar.svelte';
+	import Footer from '../components/Footer.svelte';
+	import { theme } from '../stores';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		$theme === 'light'
+			? window.document.body.classList.remove('dark')
+			: window.document.body.classList.add('dark');
+	});
 </script>
 
+<svelte:head>
+	<title>Mircea Casapu - Full Stack Web Developer</title>
+</svelte:head>
+
 <Navbar />
-<div class="container p-8 max-w-4xl mx-auto">
+<div class="content p-8 max-w-4xl mx-auto">
 	<slot />
 </div>
+<Footer />
 
 <style>
 	@tailwind base;

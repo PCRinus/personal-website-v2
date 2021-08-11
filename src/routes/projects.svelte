@@ -1,7 +1,7 @@
 <script>
 	import translations from '../translations';
 	import { language } from '../stores';
-	import Button from '../components/Button.svelte';
+	import Button from '../components/buttons/Button.svelte';
 
 	let projects = translations.pages.projects;
 </script>

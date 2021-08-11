@@ -1,7 +1,7 @@
 <script>
 	import translations from '../translations';
 	import { language } from '../stores';
-	import Button from '../components/Button.svelte';
+	import Button from '../components/buttons/Button.svelte';
 	import TextInput from '../components/forms/TextInput.svelte';
 	import TextArea from '../components/forms/TextArea.svelte';
 
