@@ -7,10 +7,11 @@
 	function changeTheme() {
 		window.document.body.classList.toggle('dark');
 		$theme === 'light' ? ($theme = 'dark') : ($theme = 'light');
+		console.log('theme changed');
 	}
 </script>
 
 <Slider on:themeChange={changeTheme}>
-	<span slot="left-label"><Light /></span>
-	<span slot="right-label"><Dark /></span>
+	<span slot="left-label">☀️</span>
+	<span slot="right-label">🌙</span>
 </Slider>

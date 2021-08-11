@@ -11,14 +11,16 @@
 
 {#each jobs.experience as job}
 	<br />
-	<h1 class="my-4 text-purple-600 text-2xl">
+	<h1 class="mb-4 text-purple-600 text-2xl">
 		{job.job_title[$language]} -
 		<span class="text-purple-900 dark:text-purple-300 text-xl">
 			{job.employer[$language]}
 		</span>
 	</h1>
-	<h1>⏱️ {job.employment_period.start[$language]} - {job.employment_period.end[$language]}</h1>
-	<h1>📍 {job.location[$language]}</h1>
-	<h1>📖 {job.job_description[$language]}</h1>
-	<h1>🖥️ {job.used_technologies[$language]}</h1>
+	<h1 class="my-2">
+		⏱️ {job.employment_period.start[$language]} - {job.employment_period.end[$language]}
+	</h1>
+	<h1 class="my-2">📍 {job.location[$language]}</h1>
+	<h1 class="my-2">📖 {job.job_description[$language]}</h1>
+	<h1 class="my-2">🖥️ {job.used_technologies[$language]}</h1>
 {/each}

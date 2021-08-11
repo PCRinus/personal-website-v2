@@ -30,6 +30,8 @@
 		>
 	</div>
 
-	<LanguageSlider />
-	<ThemeSlider />
+	<div class="items-end self-center">
+		<!-- <LanguageSlider /> -->
+		<ThemeSlider />
+	</div>
 </nav>
