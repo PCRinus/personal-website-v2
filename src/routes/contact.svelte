@@ -12,9 +12,9 @@
 	{form.form_header[$language]}
 </h1>
 
-<hr>
+<hr />
 
-<form name="contact" data-netlify="true">
+<form name="contact" method="POST" data-netlify="true">
 	<div class="flex flex-col my-8 max-w-lg">
 		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label class="">
