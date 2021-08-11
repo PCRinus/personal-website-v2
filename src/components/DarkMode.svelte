@@ -10,10 +10,3 @@
 <button on:click={toggle}>
 	<slot />
 </button>
-
-<style>
-	:global(body.dark-mode) {
-		background-color: #0084f6;
-		color: white;
-	}
-</style>

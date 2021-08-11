@@ -1,7 +1,6 @@
 <script>
 	import translations from '../translations';
 	import { language } from '../stores';
-	import Location from '../icons/Location.svelte';
 
 	let jobs = translations.pages.experiences;
 </script>
@@ -18,8 +17,8 @@
 			{job.employer[$language]}
 		</span>
 	</h1>
-	<h1>📍 {job.location[$language]}</h1>
 	<h1>⏱️ {job.employment_period.start[$language]} - {job.employment_period.end[$language]}</h1>
+	<h1>📍 {job.location[$language]}</h1>
 	<h1>📖 {job.job_description[$language]}</h1>
 	<h1>🖥️ {job.used_technologies[$language]}</h1>
 {/each}
