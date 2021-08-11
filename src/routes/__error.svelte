@@ -1,1 +1,1 @@
-<h1>Error</h1>
+<h1 class="text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">Error</h1>

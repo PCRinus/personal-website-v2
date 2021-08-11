@@ -21,6 +21,12 @@ export default {
 				en: 'Contact',
 				ro: 'Contact'
 			}
+		},
+		footer: {
+			text: {
+				en: "Created with ❤️ and ☕ by Casapu Mircea",
+				ro: "Creat cu ❤️ și ☕ de Casapu Mircea"
+			}
 		}
 	},
 	pages: {
