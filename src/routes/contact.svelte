@@ -2,27 +2,42 @@
 	import translations from '../translations';
 	import { language } from '../stores';
 	import Button from '../components/Button.svelte';
+	import TextInput from '../components/forms/TextInput.svelte';
+	import TextArea from '../components/forms/TextArea.svelte';
 
 	let form = translations.pages.contact;
 </script>
 
-<h1 class="text-4xl subpixel-antialiased text-pink-600 dark:text-green-500">{form.form_header[$language]}</h1>
+<h1 class="text-4xl subpixel-antialiased text-pink-600 dark:text-green-500">
+	{form.form_header[$language]}
+</h1>
+
+<hr>
 
 <form name="contact" data-netlify="true">
-	<div class="flex flex-col">
-		<label>
-			{form.form_label_name[$language]}
-			<input type="text" name="name" />
+	<div class="flex flex-col my-8 max-w-lg">
+		<!-- svelte-ignore a11y-label-has-associated-control -->
+		<label class="">
+			<span class="">
+				{form.form_label_name[$language]}
+			</span>
+			<TextInput name="name" />
 		</label>
 
+		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label>
-			{form.form_label_email}
-			<input type="text" name="email" />
+			<span>
+				{form.form_label_email}
+			</span>
+			<TextInput name="email" />
 		</label>
 
+		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label>
-			{form.form_label_message[$language]}
-			<textarea name="message" />
+			<span>
+				{form.form_label_message[$language]}
+			</span>
+			<TextArea name="message" />
 		</label>
 
 		<Button type="submit">{form.form_submit_button[$language]}</Button>
