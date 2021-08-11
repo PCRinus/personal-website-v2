@@ -181,8 +181,8 @@ export default {
 		],
 		contact: {
 			form_header: {
-				en: 'Get in touch',
-				ro: 'Contactează-mă'
+				en: 'Get in touch 👋 for work collaboration or any other questions.',
+				ro: 'Contactează-mă 👋 pentru colaborări, sau pentru orice altă întrebare.'
 			},
 			form_label_name: {
 				en: 'Name',

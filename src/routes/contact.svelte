@@ -8,14 +8,12 @@
 	let form = translations.pages.contact;
 </script>
 
-<h1 class="text-4xl subpixel-antialiased text-pink-600 dark:text-green-500">
+<h1 class="text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
 	{form.form_header[$language]}
 </h1>
 
-<hr />
-
 <form name="contact" method="POST" data-netlify="true">
-	<div class="flex flex-col my-8 max-w-lg">
+	<div class="flex flex-col my-4 max-w-lg">
 		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label class="">
 			<span class="">

@@ -12,12 +12,23 @@
 	}
 </script>
 
-<nav class="flex justify-between w-full p-4">
+<nav class="flex justify-between w-full px-32 py-4">
 	<div class="items-start self-center">
-		<a class="mx-2.5" href=".">{t.profile[$language]}</a>
-		<a class="mx-2.5" href="experience">{t.experience[$language]}</a>
-		<a class="mx-2.5" href="projects">{t.projects[$language]}</a>
-		<a class="mx-2.5" href="contact">{t.contact[$language]}</a>
+		<a class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500" href="."
+			>{t.profile[$language]}</a
+		>
+		<a
+			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+			href="experience">{t.experience[$language]}</a
+		>
+		<a
+			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+			href="projects">{t.projects[$language]}</a
+		>
+		<a
+			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+			href="contact">{t.contact[$language]}</a
+		>
 	</div>
 
 	<div class="items-end self-center">
