@@ -1,6 +1,12 @@
 <script>
-	import { createEventDispatcher } from 'svelte';
+	import { createEventDispatcher, onMount } from 'svelte';
 	const dispatch = createEventDispatcher();
+
+	// let checked;
+
+	// onMount(async () => {
+	// 	checked = '';
+	// });
 
 	function toggle() {
 		dispatch('themeChange');

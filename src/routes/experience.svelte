@@ -11,7 +11,7 @@
 
 {#each jobs.experience as job}
 	<br />
-	<h1 class="mb-4 text-purple-600 text-2xl">
+	<h1 class="mb-4 text-purple-600 dark:text-green-200 text-2xl">
 		{job.job_title[$language]} -
 		<span class="text-purple-900 dark:text-purple-300 text-xl">
 			{job.employer[$language]}

@@ -19,8 +19,8 @@
 <div class="content p-8 max-w-4xl mx-auto">
 	<slot />
 </div>
-<Footer />
 
+<!-- <Footer /> -->
 <style>
 	@tailwind base;
 	@tailwind components;
