@@ -10,7 +10,6 @@
 	onMount(async () => {
 		current_theme = await Cookies.getCookie('theme');
 		current_theme === 'dark' ? (checked = 'checked') : (checked = '');
-		console.log(checked);
 	});
 
 	function changeTheme() {

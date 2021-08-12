@@ -5,6 +5,7 @@
 	import LanguageSlider from './LanguageSlider.svelte';
 
 	let t = translations.components.navbar;
+	export let segment;
 </script>
 
 <nav class="flex justify-between w-full px-32 py-4">
@@ -13,19 +14,32 @@
 			>Mircea Casapu</a
 		>
 
-		<a class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500" href="."
-			>{t.profile[$language]}</a
+		<a
+			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500 {segment ===
+			'/'
+				? 'text-pink-600 dark:text-green-500'
+				: ''}"
+			href=".">{t.profile[$language]}</a
 		>
 		<a
-			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500 {segment ===
+			'/experience'
+				? 'text-pink-600 dark:text-green-500'
+				: ''}"
 			href="experience">{t.experience[$language]}</a
 		>
 		<a
-			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500 {segment ===
+			'/projects'
+				? 'text-pink-600 dark:text-green-500'
+				: ''}"
 			href="projects">{t.projects[$language]}</a
 		>
 		<a
-			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+			class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500 {segment ===
+			'/contact'
+				? 'text-pink-600 dark:text-green-500'
+				: ''}"
 			href="contact">{t.contact[$language]}</a
 		>
 	</div>

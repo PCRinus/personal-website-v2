@@ -1,9 +1,11 @@
 <script>
 	import Navbar from '../components/navbar/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
+	import Transition from '../components/Transition.svelte';
 	import { theme } from '../stores';
 	import { onMount } from 'svelte';
 	import * as Cookies from '../cookies';
+	import { page } from '$app/stores';
 
 	onMount(async () => {
 		let currentTheme = Cookies.getCookie('theme');
@@ -19,9 +21,11 @@
 	<title>Mircea Casapu - Full Stack Web Developer</title>
 </svelte:head>
 
-<Navbar />
+<Navbar segment={$page.path} />
 <div class="content p-8 max-w-4xl mx-auto">
-	<slot />
+	<Transition refresh={$page.path}>
+		<slot />
+	</Transition>
 </div>
 
 <!-- <Footer /> -->
