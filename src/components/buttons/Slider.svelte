@@ -1,12 +1,8 @@
 <script>
-	import { createEventDispatcher, onMount } from 'svelte';
+	import { createEventDispatcher } from 'svelte';
+
+	export let checked;
 	const dispatch = createEventDispatcher();
-
-	// let checked;
-
-	// onMount(async () => {
-	// 	checked = '';
-	// });
 
 	function toggle() {
 		dispatch('themeChange');
@@ -22,7 +18,7 @@
 		<!-- toggle -->
 		<div class="relative">
 			<!-- input -->
-			<input id="toogleA" type="checkbox" class="sr-only" on:click={toggle} />
+			<input id="toogleA" type="checkbox" class="sr-only" on:click={toggle} {checked} />
 			<!-- line -->
 			<div class="w-10 h-4 bg-gray-400 rounded-full shadow-inner" />
 			<!-- dot -->

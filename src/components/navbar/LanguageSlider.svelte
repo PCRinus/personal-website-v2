@@ -4,7 +4,6 @@
 
 	function changeLanguage() {
 		$language === 'ro' ? ($language = 'en') : ($language = 'ro');
-		console.log('lang changed');
 	}
 </script>
 

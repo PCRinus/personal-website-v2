@@ -3,8 +3,12 @@
 	import Footer from '../components/Footer.svelte';
 	import { theme } from '../stores';
 	import { onMount } from 'svelte';
+	import * as Cookies from '../cookies';
 
 	onMount(async () => {
+		let currentTheme = Cookies.getCookie('theme');
+		$theme = await currentTheme;
+
 		$theme === 'light'
 			? window.document.body.classList.remove('dark')
 			: window.document.body.classList.add('dark');
