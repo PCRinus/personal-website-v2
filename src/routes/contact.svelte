@@ -1,7 +1,7 @@
 <script>
 	import translations from '../translations';
 	import { language } from '../stores';
-	import Button from '../components/buttons/Button.svelte';
+	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 	import TextInput from '../components/forms/TextInput.svelte';
 	import EmailInput from '../components/forms/EmailInput.svelte';
 	import TextArea from '../components/forms/TextArea.svelte';
@@ -39,6 +39,6 @@
 			<TextArea name="message" />
 		</label>
 
-		<Button type="submit">✉️ {form.form_submit_button[$language]}</Button>
+		<PrimaryButton type="submit">✉️ {form.form_submit_button[$language]}</PrimaryButton>
 	</div>
 </form>
