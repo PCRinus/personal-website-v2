@@ -6,12 +6,16 @@
 	import * as Cookies from '../cookies';
 
 	onMount(async () => {
-		let currentTheme = Cookies.getCookie('theme');
-		$theme = await currentTheme;
+		let currentTheme = await Cookies.getCookie('theme');
 
-		$theme === 'light'
-			? window.document.body.classList.remove('dark')
-			: window.document.body.classList.add('dark');
+		if (currentTheme !== null) {
+			currentTheme === 'light'
+				? window.document.body.classList.remove('dark')
+				: window.document.body.classList.add('dark');
+		} else {
+			window.document.body.classList.remove('dark');
+			Cookies.setCookie('theme', 'light', 7);
+		}
 	});
 </script>
 
