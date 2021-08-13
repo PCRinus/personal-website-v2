@@ -1,12 +1,13 @@
 <script>
 	import Navbar from '../components/navbar/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
-	import { theme } from '../stores';
 	import { onMount } from 'svelte';
 	import * as Cookies from '../cookies';
+	import { language } from '../stores';
 
 	onMount(async () => {
 		let currentTheme = await Cookies.getCookie('theme');
+		let currentLanguage = await Cookies.getCookie('language');
 
 		if (currentTheme !== null) {
 			currentTheme === 'light'
@@ -15,6 +16,12 @@
 		} else {
 			window.document.body.classList.remove('dark');
 			Cookies.setCookie('theme', 'light', 7);
+		}
+
+		if (currentLanguage === null) {
+			Cookies.setCookie('language', 'en', 7);
+		} else {
+			$language = currentLanguage;
 		}
 	});
 </script>

@@ -31,7 +31,7 @@
 	</div>
 
 	<div class="items-end self-center">
-		<!-- <LanguageSlider /> -->
-		<ThemeSlider />
+		<LanguageSlider />
+		<!-- <ThemeSlider /> -->
 	</div>
 </nav>
