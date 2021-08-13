@@ -47,7 +47,7 @@
 		transition: background-color 0.3s;
 	}
 	:global(body.dark) {
-		background-color: #1d3040;
+		@apply bg-jet-dark;
 		color: white;
 	}
 </style>

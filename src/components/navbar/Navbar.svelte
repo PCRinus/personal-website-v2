@@ -7,7 +7,7 @@
 	let t = translations.components.navbar;
 </script>
 
-<nav class="flex justify-between w-full px-32 py-4">
+<nav class="flex justify-between w-full px-32 py-4 bg-cadetBlue-light dark:bg-jet">
 	<div class="items-start self-center">
 		<a class="mx-2.5 transition duration-200 text-pink-600 dark:text-green-500" href="."
 			>Mircea Casapu</a
@@ -31,7 +31,7 @@
 	</div>
 
 	<div class="items-end self-center">
-		<LanguageSlider />
-		<!-- <ThemeSlider /> -->
+		<!-- <LanguageSlider /> -->
+		<ThemeSlider />
 	</div>
 </nav>
