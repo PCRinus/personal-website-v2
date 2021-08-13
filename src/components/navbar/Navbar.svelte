@@ -7,7 +7,7 @@
 	let t = translations.components.navbar;
 </script>
 
-<nav class="flex justify-between w-full px-32 py-4 bg-cadetBlue-light dark:bg-jet">
+<nav class="md:flex justify-between w-full px-32 py-4 bg-cadetBlue-light dark:bg-jet-light hidden ">
 	<div class="items-start self-center">
 		<a class="mx-2.5 transition duration-200 text-pink-600 dark:text-green-500" href="."
 			>Mircea Casapu</a

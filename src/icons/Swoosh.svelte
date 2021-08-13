@@ -19,7 +19,7 @@
 		left: -3%;
 		right: -3%;
 		bottom: 0px;
-		width: 106%;
+		width: 100%;
 		min-width: 600px;
 	}
 </style>
