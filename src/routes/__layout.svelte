@@ -3,7 +3,8 @@
 	import Footer from '../components/Footer.svelte';
 	import { onMount } from 'svelte';
 	import * as Cookies from '../cookies';
-	import { language } from '../stores';
+	import { language, theme } from '../stores';
+	import Swoosh from '../icons/Swoosh.svelte';
 
 	onMount(async () => {
 		let currentTheme = await Cookies.getCookie('theme');
@@ -13,6 +14,7 @@
 			currentTheme === 'light'
 				? window.document.body.classList.remove('dark')
 				: window.document.body.classList.add('dark');
+			currentTheme === 'light' ? ($theme = 'light') : ($theme = 'dark');
 		} else {
 			window.document.body.classList.remove('dark');
 			Cookies.setCookie('theme', 'light', 7);
@@ -34,6 +36,7 @@
 <div class="content p-8 max-w-4xl mx-auto">
 	<slot />
 </div>
+<Swoosh />
 
 <!-- <Footer /> -->
 <style>
