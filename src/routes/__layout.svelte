@@ -32,7 +32,7 @@
 	<title>Mircea Casapu - Full Stack Web Developer</title>
 </svelte:head>
 
-<div class="md:text-2xl">
+<div class="lg:text-2xl">
 	<Navbar />
 	<Swoosh themeChange={$theme} color={$theme === 'light' ? 'AFD3D5' : '5A5D72'} />
 	<div class="content p-8 max-w-4xl mx-auto z-10">
