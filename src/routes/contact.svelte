@@ -1,10 +1,11 @@
 <script>
 	import translations from '../translations';
-	import { language } from '../stores';
+	import { language, theme } from '../stores';
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 	import TextInput from '../components/forms/TextInput.svelte';
 	import EmailInput from '../components/forms/EmailInput.svelte';
 	import TextArea from '../components/forms/TextArea.svelte';
+	import Mailbox from '../images/Mailbox.svelte';
 
 	let form = translations.pages.contact;
 </script>
@@ -42,3 +43,4 @@
 		<PrimaryButton type="submit">✉️ {form.form_submit_button[$language]}</PrimaryButton>
 	</div>
 </form>
+<!-- <Mailbox themeChange={theme} primary={$theme === "light" ? "#BE185D" : "#10B981"}/> -->
