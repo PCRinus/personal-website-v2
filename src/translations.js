@@ -38,11 +38,35 @@ export default {
 			}
 		},
 		experiences: {
-			header: {
+			education_header: {
+				en: 'Education',
+				ro: 'Educație'
+			},
+			job_header: {
 				en: 'Work experience',
 				ro: 'Experiență de muncă'
 			},
-			experience: [
+			education_experience: [
+				{
+					institiution: {
+						en: 'Polytechnic University of Timisoara - UPT',
+						ro: 'Universitatea Politehnică din Timișoara - UPT'
+					},
+					diploma: {
+						en: "Bachelor's of Engineering - BEng",
+						ro: 'Diplomă de inginer'
+					},
+					period: {
+						start: '01-09-2017',
+						end: '01-07-2021'
+					},
+					description: {
+						en: 'Elit cillum nisi et consequat in veniam qui culpa labore.',
+						ro: 'Est voluptate nulla anim ipsum et nisi nisi.'
+					}
+				}
+			],
+			job_experience: [
 				{
 					job_title: {
 						en: 'Junior Software Development Engineer',
@@ -163,7 +187,7 @@ export default {
 						en:
 							"educativ.io was my Bachelor's Project. Initially, it was envisioned as an online mentoring platform, but it evolved over time as a full fledged eLearning platform, that allows users to search and view various lessons over various topics. It also allows users to add and manage their own lessons using an integrated Markdown editor.",
 						ro:
-							'educativ.io a fost proiectul meu de licență. Inițial, a fost concepută ca o platformă de mentorat online, dar a evoluat in timp ca o platformă completă de eLearning, care permite utilizatorilor să caute și să vizualizeze diverse lecții pe diferite teme. Aceasta permite, de asemenea, utilizatorilor să adauge și să gestioneze propriile lecții folosind un editor Markdown integrat.'
+							'educativ.io a fost proiectul meu de licență. Inițial, a fost conceput ca o platformă de mentorat online, dar a evoluat in timp ca o platformă completă de eLearning, care permite utilizatorilor să caute și să vizualizeze diverse lecții pe diferite teme. Aceasta permite, de asemenea, utilizatorilor să adauge și să gestioneze propriile lecții folosind un editor Markdown integrat.'
 					},
 					used_technologies: {
 						en: 'Svelte, NodeJS, Express, MongoDB, Puppetter, Heroku, BulmaCSS',
