@@ -20,6 +20,5 @@
 		right: -3%;
 		bottom: 0px;
 		width: 100%;
-		min-width: 600px;
 	}
 </style>
