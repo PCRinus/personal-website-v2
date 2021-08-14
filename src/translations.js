@@ -32,11 +32,11 @@ export default {
 	pages: {
 		index: {
 			hero_greeting: {
-				en: 'Hey! I am Mircea 👋🏼',
+				en: 'Hey! I am Mircea',
 				ro:
-					'Salut! Numele meu e Mircea 👋🏼'
+					'Salut! Numele meu e Mircea'
 			},
-			hero_h2: {
+			hero_subgreeting: {
 				en: "I build web applications that run across platforms and devices!",
 				ro: "Construiesc aplicații web ce rulează pe diverse platforme și dispozitive!"
 			}
@@ -240,8 +240,8 @@ export default {
 		},
 		contact: {
 			form_header: {
-				en: 'Get in touch 👋 for work collaboration or any other questions.',
-				ro: 'Contactează-mă 👋 pentru colaborări, sau pentru orice altă întrebare.'
+				en: 'Get in touch 👋🏼 for work collaboration or any other questions.',
+				ro: 'Contactează-mă 👋🏼 pentru colaborări, sau pentru orice altă întrebare.'
 			},
 			form_label_name: {
 				en: 'Name',
