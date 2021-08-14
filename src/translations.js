@@ -32,9 +32,13 @@ export default {
 	pages: {
 		index: {
 			hero_greeting: {
-				en: 'Hey! I am Mircea. I build web applications that run across platforms and devices!',
+				en: 'Hey! I am Mircea 👋🏼',
 				ro:
-					'Salut! Numele meu e Mircea. Construiesc aplicații web ce rulează pe diverse platforme și dispozitive!'
+					'Salut! Numele meu e Mircea 👋🏼'
+			},
+			hero_h2: {
+				en: "I build web applications that run across platforms and devices!",
+				ro: "Construiesc aplicații web ce rulează pe diverse platforme și dispozitive!"
 			}
 		},
 		experiences: {
