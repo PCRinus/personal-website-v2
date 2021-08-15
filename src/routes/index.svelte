@@ -1,7 +1,7 @@
 <script>
 	import translations from '../translations';
 	import { language } from '../stores';
-	import ProfileDescription from '../components/ProfileDescription.svelte';
+	// import ProfileDescription from '../components/ProfileDescription.svelte';
 
 	let t = translations.pages.index;
 </script>
@@ -13,7 +13,7 @@
 <h2 class="my-8 subpixel-antialiased text-pink-600 dark:text-green-500">
 	{t.hero_subgreeting[$language]}
 </h2>
-<ProfileDescription />
+<!-- <ProfileDescription /> -->
 
 <style>
 	#wave {

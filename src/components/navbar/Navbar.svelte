@@ -49,7 +49,7 @@
 		<div class="flex justify-between">
 			<div class="flex items-center">
 				<div>
-					<a class="mx-2.5 text-2xl text-pink-600 dark:text-green-500" href=".">Mircea Casapu</a>
+					<a class="md:mx-2.5 text-2xl text-pink-600 dark:text-green-500" href=".">Mircea Casapu</a>
 				</div>
 				<!-- Primary Navbar items -->
 				<div class="hidden md:flex items-center text-xl">
@@ -98,26 +98,16 @@
 	<div class="mobile-menu {$mobileNavMenu}">
 		<ul class="">
 			<li class="active">
-				<a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
-					>Home</a
-				>
+				<a href="." class="block text-xl px-4 py-4 font-semibold -mb-2">🧑🏻 {t.profile[$language]}</a>
 			</li>
 			<li>
-				<a
-					href="#services"
-					class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a
-				>
+				<a href="experience" class="block text-xl px-4 py-4 -my-2">🧑🏻‍💻 {t.experience[$language]}</a>
 			</li>
 			<li>
-				<a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-					>About</a
-				>
+				<a href="projects" class="block text-xl px-4 py-4 -my-2">💻 {t.projects[$language]}</a>
 			</li>
 			<li>
-				<a
-					href="#contact"
-					class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a
-				>
+				<a href="contact" class="block text-xl px-4 py-4 -my-2">✉️ {t.contact[$language]}</a>
 			</li>
 		</ul>
 	</div>
