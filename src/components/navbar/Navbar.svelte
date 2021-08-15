@@ -3,46 +3,16 @@
 	import { language, mobileNavMenu } from '../../stores';
 	import ThemeSlider from './ThemeSlider.svelte';
 	import LanguageSlider from './LanguageSlider.svelte';
+	import { fly } from 'svelte/transition';
 
 	let t = translations.components.navbar;
+	let visible = false;
 
 	function toggleMobileNav() {
 		$mobileNavMenu === 'hidden' ? ($mobileNavMenu = '') : ($mobileNavMenu = 'hidden');
+		visible = !visible;
 	}
 </script>
-
-<!-- <nav
-	class="w-full md:px-24 xl:px-48 2xl:px-96 pt-16 bg-cadetBlue-light dark:bg-jet-light"
->
-	<div class="lg:flex justify-between hidden">
-		<div class="items-start self-center">
-			<a class="mx-2.5 transition duration-200 text-pink-600 dark:text-green-500" href="."
-				>Mircea Casapu</a
-			>
-
-			<a
-				class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
-				href=".">{t.profile[$language]}</a
-			>
-			<a
-				class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
-				href="experience">{t.experience[$language]}</a
-			>
-			<a
-				class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
-				href="projects">{t.projects[$language]}</a
-			>
-			<a
-				class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
-				href="contact">{t.contact[$language]}</a
-			>
-		</div>
-
-		<div class="items-end self-center">
-			<ThemeSlider />
-		</div>
-	</div>
-</nav> -->
 
 <nav class="shadow-lg pt-8 bg-cadetBlue-light dark:bg-jet-light">
 	<div class="max-w-5xl mx-auto px-4">
@@ -79,7 +49,9 @@
 			<div class="md:hidden flex items-center">
 				<button class="outline-none mobile-menu-button" on:click={toggleMobileNav}>
 					<svg
-						class=" w-6 h-6 text-black hover:text-pink-700 dark:text-white dark:hover:text-green-500 "
+						class=" w-6 h-6 {visible === true
+							? 'text-pink-700 dark:text-green-500'
+							: 'text-black dark:text-white'} "
 						x-show="!showMenu"
 						fill="none"
 						stroke-linecap="round"
@@ -95,20 +67,21 @@
 		</div>
 	</div>
 	<!-- mobile menu -->
-	<div class="mobile-menu {$mobileNavMenu}">
-		<ul class="">
-			<li class="active">
-				<a href="." class="block text-xl px-4 py-4 font-semibold -mb-2">🧑🏻 {t.profile[$language]}</a>
-			</li>
-			<li>
-				<a href="experience" class="block text-xl px-4 py-4 -my-2">🧑🏻‍💻 {t.experience[$language]}</a>
-			</li>
-			<li>
-				<a href="projects" class="block text-xl px-4 py-4 -my-2">💻 {t.projects[$language]}</a>
-			</li>
-			<li>
-				<a href="contact" class="block text-xl px-4 py-4 -my-2">✉️ {t.contact[$language]}</a>
-			</li>
-		</ul>
-	</div>
+	{#if visible}
+		<!-- content here -->
+		<div class="mobile-menu" transition:fly={{ y: -200, duration: 200 }}>
+			<a href="." class="block text-xl px-4 py-4 font-semibold -mb-2" on:click={toggleMobileNav}
+				>🧑🏻 {t.profile[$language]}</a
+			>
+			<a href="experience" class="block text-xl px-4 py-4 -my-2" on:click={toggleMobileNav}
+				>🧑🏻‍💻 {t.experience[$language]}</a
+			>
+			<a href="projects" class="block text-xl px-4 py-4 -my-2" on:click={toggleMobileNav}
+				>💻 {t.projects[$language]}</a
+			>
+			<a href="contact" class="block text-xl px-4 py-4 -my-2" on:click={toggleMobileNav}
+				>✉️ {t.contact[$language]}</a
+			>
+		</div>
+	{/if}
 </nav>
