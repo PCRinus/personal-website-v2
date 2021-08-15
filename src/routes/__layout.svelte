@@ -32,11 +32,16 @@
 	<title>Mircea Casapu - Full Stack Web Developer</title>
 </svelte:head>
 
-<div class="lg:text-2xl">
-	<Navbar />
-	<Swoosh themeChange={$theme} color={$theme === 'light' ? 'AFD3D5' : '5A5D72'} />
+<div id="content-wrapper" class="flex lg:text-2xl">
+	<div class="block">
+		<Navbar />
+		<Swoosh themeChange={$theme} color={$theme === 'light' ? 'AFD3D5' : '5A5D72'} />
+	</div>
 	<div class="content p-8 max-w-5xl mx-auto">
 		<slot />
+	</div>
+	<div class="footer">
+		<h1>Created by mircea casapu</h1>
 	</div>
 </div>
 
@@ -46,6 +51,11 @@
 	@tailwind components;
 	@tailwind utilities;
 
+	#content-wrapper {
+		flex-direction: column;
+		height: 100vh;
+	}
+
 	:global(body) {
 		background-color: white;
 		color: black;
@@ -54,5 +64,11 @@
 	:global(body.dark) {
 		@apply bg-jet-dark;
 		color: white;
+	}
+	.content {
+		flex: 1 0 auto;
+	}
+	.footer {
+		flex-shrink: 0;
 	}
 </style>
