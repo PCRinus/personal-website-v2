@@ -256,6 +256,12 @@ export default {
 				en: 'Submit',
 				ro: 'Trimite'
 			}
+		},
+		error: {
+			error_message: {
+				en: "Page not found! Sorry for the inconvenience 🙏🏻",
+				ro: "Pagina nu a fost găsită. Ne pare rău! 🙏🏻"
+			}
 		}
 	}
 };
