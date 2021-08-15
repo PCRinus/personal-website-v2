@@ -6,7 +6,7 @@
 	let t = translations.pages.index;
 </script>
 
-<h1 class="text-5xl mb-8 subpixel-antialiased text-pink-600 dark:text-green-500">
+<h1 class="text-5xl lg:text-7xl mb-8 subpixel-antialiased text-pink-600 dark:text-green-500">
 	{t.hero_greeting[$language]}
 	<span id="wave">👋🏼</span>
 </h1>

@@ -68,7 +68,7 @@
 	<!-- mobile menu -->
 	{#if visible}
 		<!-- content here -->
-		<div class="mobile-menu" in:fly={{ y: -200, duration: 200 }}>
+		<div class="mobile-menu md:hidden" in:fly={{ y: -200, duration: 200 }}>
 			<a
 				href="."
 				class="block text-xl px-4 py-4 -mb-2 {segment === '/'

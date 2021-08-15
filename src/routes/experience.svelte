@@ -14,21 +14,21 @@
 	}
 </script>
 
-<div class="flex -mt-16 justify-end">
+<!-- <div class="flex -mt-16 justify-end">
 	<PrimaryButton on:click={toggleExperience}>
 		{sectionToggle === true ? 'Education' : 'Job Experience'}
 	</PrimaryButton>
-</div>
+</div> -->
 
 {#if !sectionToggle}
 	<div class="mb-5">
-		<h1 class="text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
+		<h1 class="text-3xl lg:text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
 			{headers.education_header[$language]}
 		</h1>
 
 		{#each educations as education}
 			<div>
-				<h1 class="mb-4 text-purple-600 dark:text-green-200 text-2xl">
+				<h1 class="mb-4 text-purple-600 dark:text-purple-300 text-2xl">
 					{education.diploma[$language]} -
 					<span class="text-purple-900 dark:text-purple-300 text-xl">
 						{education.institiution[$language]}
@@ -45,13 +45,14 @@
 	</div>
 {:else}
 	<div>
-		<h1 class="text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
+		<h1 class="text-3xl lg:text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
 			{headers.job_header[$language]}
 		</h1>
 
 		{#each jobs as job}
 			<div>
-				<h1 class="mb-4 text-purple-600 dark:text-green-200 text-2xl">
+				<br>
+				<h1 class="mb-4 text-purple-600 dark:text-purple-300 text-2xl">
 					{job.job_title[$language]} -
 					<span class="text-purple-900 dark:text-purple-300 text-xl">
 						{job.employer[$language]}

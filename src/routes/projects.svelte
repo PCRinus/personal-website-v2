@@ -7,7 +7,7 @@
 	let projects = translations.pages.projects;
 </script>
 
-<h1 class="text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
+<h1 class="text-3xl lg:text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
 	{projects.header[$language]}
 </h1>
 
