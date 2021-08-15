@@ -5,6 +5,7 @@
 	import * as Cookies from '../cookies';
 	import { language, theme } from '../stores';
 	import Swoosh from '../icons/Swoosh.svelte';
+	import { page } from '$app/stores';
 
 	onMount(async () => {
 		let currentTheme = await Cookies.getCookie('theme');
@@ -33,7 +34,7 @@
 </svelte:head>
 
 <div class="lg:text-2xl">
-	<Navbar />
+	<Navbar segment={$page.path} />
 	<Swoosh themeChange={$theme} color={$theme === 'light' ? 'AFD3D5' : '5A5D72'} />
 	<div class="content p-8 max-w-5xl mx-auto">
 		<slot />

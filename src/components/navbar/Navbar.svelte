@@ -3,8 +3,10 @@
 	import { language, mobileNavMenu } from '../../stores';
 	import ThemeSlider from './ThemeSlider.svelte';
 	import LanguageSlider from './LanguageSlider.svelte';
-	import { fly } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
+	import MobileMenuButton from './MobileMenuButton.svelte';
 
+	export let segment;
 	let t = translations.components.navbar;
 	let visible = false;
 
@@ -24,19 +26,31 @@
 				<!-- Primary Navbar items -->
 				<div class="hidden md:flex items-center text-xl">
 					<a
-						class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+						class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500 {segment ===
+						'/'
+							? 'text-pink-600 dark:text-green-500 font-semibold'
+							: 'text-black dark:text-white'}"
 						href=".">{t.profile[$language]}</a
 					>
 					<a
-						class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+						class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500 {segment ===
+						'/experience'
+							? 'text-pink-600 dark:text-green-500 font-semibold'
+							: 'text-black dark:text-white'}"
 						href="experience">{t.experience[$language]}</a
 					>
 					<a
-						class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+						class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500 {segment ===
+						'/projects'
+							? 'text-pink-600 dark:text-green-500 font-semibold'
+							: 'text-black dark:text-white'}"
 						href="projects">{t.projects[$language]}</a
 					>
 					<a
-						class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500"
+						class="mx-2.5 transition duration-200 hover:text-pink-600 dark:hover:text-green-500 {segment ===
+						'/contact'
+							? 'text-pink-600 dark:text-green-500 font-semibold'
+							: 'text-black dark:text-white'}"
 						href="contact">{t.contact[$language]}</a
 					>
 				</div>
@@ -47,40 +61,41 @@
 			</div>
 			<!-- Mobile menu button -->
 			<div class="md:hidden flex items-center">
-				<button class="outline-none mobile-menu-button" on:click={toggleMobileNav}>
-					<svg
-						class=" w-6 h-6 {visible === true
-							? 'text-pink-700 dark:text-green-500'
-							: 'text-black dark:text-white'} "
-						x-show="!showMenu"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-					>
-						<path d="M4 6h16M4 12h16M4 18h16" />
-					</svg>
-				</button>
+				<MobileMenuButton on:toggleMobileNav={toggleMobileNav} {visible} />
 			</div>
 		</div>
 	</div>
 	<!-- mobile menu -->
 	{#if visible}
 		<!-- content here -->
-		<div class="mobile-menu" transition:fly={{ y: -200, duration: 200 }}>
-			<a href="." class="block text-xl px-4 py-4 font-semibold -mb-2" on:click={toggleMobileNav}
-				>🧑🏻 {t.profile[$language]}</a
+		<div class="mobile-menu" in:fly={{ y: -200, duration: 200 }}>
+			<a
+				href="."
+				class="block text-xl px-4 py-4 -mb-2 {segment === '/'
+					? 'text-pink-700 dark:text-green-500 font-semibold'
+					: 'text-black dark:text-white'}"
+				on:click={toggleMobileNav}>🧑🏻 {t.profile[$language]}</a
 			>
-			<a href="experience" class="block text-xl px-4 py-4 -my-2" on:click={toggleMobileNav}
-				>🧑🏻‍💻 {t.experience[$language]}</a
+			<a
+				href="experience"
+				class="block text-xl px-4 py-4 -my-2 {segment === '/experience'
+					? 'text-pink-700 dark:text-green-500 font-semibold'
+					: 'text-black dark:text-white'}"
+				on:click={toggleMobileNav}>🧑🏻‍💻 {t.experience[$language]}</a
 			>
-			<a href="projects" class="block text-xl px-4 py-4 -my-2" on:click={toggleMobileNav}
-				>💻 {t.projects[$language]}</a
+			<a
+				href="projects"
+				class="block text-xl px-4 py-4 -my-2 {segment === '/projects'
+					? 'text-pink-700 dark:text-green-500 font-semibold'
+					: 'text-black dark:text-white'}"
+				on:click={toggleMobileNav}>💻 {t.projects[$language]}</a
 			>
-			<a href="contact" class="block text-xl px-4 py-4 -my-2" on:click={toggleMobileNav}
-				>✉️ {t.contact[$language]}</a
+			<a
+				href="contact"
+				class="block text-xl px-4 py-4 -my-2 {segment === '/contact'
+					? 'text-pink-700 dark:text-green-500 font-semibold'
+					: 'text-black dark:text-white'}"
+				on:click={toggleMobileNav}>✉️ {t.contact[$language]}</a
 			>
 		</div>
 	{/if}
