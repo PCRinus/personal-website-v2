@@ -76,8 +76,8 @@ export default {
 					ro: 'Descarcă-mi CV-ul'
 				},
 				text: {
-					en: 'Take a look over my resume',
-					ro: 'Aruncă o privire peste CV-ul meu'
+					en: 'My resume',
+					ro: 'CV-ul meu'
 				}
 			}
 		},
@@ -228,8 +228,8 @@ export default {
 							'Aceasta a fost prima iterație a site-ului meu personal. A fost construit când am fost angajat la primul meu loc de muncă și a fost un loc de joacă pentru o multitudine de idei.'
 					},
 					used_technologies: {
-						en: 'HTML, CSS(Bootstrap4 4), JavaScript(jQuery), Netlify',
-						ro: 'HTML, CSS(Bootstrap4 4), JavaScript(jQuery), Netlify'
+						en: 'HTML, CSS(Bootstrap 4), JavaScript(jQuery), Netlify',
+						ro: 'HTML, CSS(Bootstrap 4), JavaScript(jQuery), Netlify'
 					},
 					github_link: 'https://github.com/PCRinus/PersonalWebsite',
 					website_link: 'https://www.mirceacasapu.com/'
