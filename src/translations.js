@@ -24,12 +24,14 @@ export default {
 		},
 		footer: {
 			text: {
-				en: 'Designed and developed by <strong class="text-pink-700 dark:text-green-500">Mircea Casapu</strong> © 2021',
-				ro: 'Proiectat si dezvoltat de <strong>Mircea Casapu</strong> © 2021'
+				en:
+					'Designed and developed by <strong class="text-pink-700 dark:text-green-500">Mircea Casapu</strong> © 2021',
+				ro:
+					'Proiectat si dezvoltat de <strong class="text-pink-700 dark:text-green-500">Mircea Casapu</strong> © 2021'
 			},
 			coffee: {
-				en: "Powered by ☕",
-				ro: "Cu ajutorul ☕"
+				en: 'Powered by ☕',
+				ro: 'Cu ajutorul ☕'
 			}
 		}
 	},
