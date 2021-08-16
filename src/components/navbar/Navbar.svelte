@@ -21,7 +21,7 @@
 		<div class="flex justify-between">
 			<div class="flex items-center">
 				<div>
-					<a class="md:mx-2.5 text-2xl text-pink-600 dark:text-green-500" href=".">Mircea Casapu</a>
+					<a class="md:mx-2.5 text-2xl text-pink-600 dark:text-green-500 font-semibold" href=".">{`</m.casapu>`}</a>
 				</div>
 				<!-- Primary Navbar items -->
 				<div class="hidden md:flex items-center text-xl">
