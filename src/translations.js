@@ -59,7 +59,7 @@ export default {
 				skills: {
 					languages: ['JavaScript', 'PHP', 'HTML', 'CSS/Sass', 'C#', 'SQL'],
 					frameworks: ['Svelte & SvelteKit', 'React', 'NodeJS', '.NET'],
-					tools: ['VS Code', 'Git & GitHub', 'Netlify', 'Heroku', 'Jira', 'Postman']
+					tools: ['VS Code', 'Git & GitHub', 'Netlify', 'Heroku', 'Postman', 'Jira']
 				},
 				languages_header: {
 					en: 'Languages',

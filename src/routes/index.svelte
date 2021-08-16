@@ -4,6 +4,8 @@
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 
 	let t = translations.pages.index;
+
+	function getCV() {}
 </script>
 
 <h1 class="text-5xl lg:text-7xl mb-8 subpixel-antialiased text-pink-600 dark:text-green-500">
@@ -68,10 +70,10 @@
 	<h1 class="text-5xl lg:text-7xl my-8 subpixel-antialiased text-pink-600 dark:text-green-500">
 		{t.cv.text[$language]}
 	</h1>
-	<PrimaryButton>📝 {t.cv.button[$language]}</PrimaryButton>
+	<PrimaryButton on:click={getCV}>📝 {t.cv.button[$language]}</PrimaryButton>
 </div>
 
-<style>
+<!-- <style>
 	#wave {
 		animation: wave 2s ease infinite alternate;
 	}
@@ -84,8 +86,4 @@
 			transform: rotateX(20deg);
 		}
 	}
-
-	.intro {
-		height: 100vh;
-	}
-</style>
+</style> -->
