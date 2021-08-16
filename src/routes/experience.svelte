@@ -20,51 +20,26 @@
 	</PrimaryButton>
 </div> -->
 
-{#if !sectionToggle}
-	<div class="mb-5">
-		<h1 class="text-3xl lg:text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
-			{headers.education_header[$language]}
-		</h1>
+<div>
+	<h1 class="text-3xl lg:text-7xl subpixel-antialiased text-pink-600 dark:text-green-500">
+		{headers.job_header[$language]}
+	</h1>
 
-		{#each educations as education}
-			<div>
-				<h1 class="mb-4 text-purple-600 dark:text-purple-300 text-2xl">
-					{education.diploma[$language]} -
-					<span class="text-purple-900 dark:text-purple-300 text-xl">
-						{education.institiution[$language]}
-					</span>
-				</h1>
-				<h1 class="my-2">
-					⏱️ {education.period.start} - {education.period.end}
-				</h1>
-				<!-- <h1 class="my-2">📍 {education.location[$language]}</h1> -->
-				<h1 class="my-2">📖 {education.description[$language]}</h1>
-				<!-- <h1 class="my-2">🖥️ {education.used_technologies[$language]}</h1> -->
-			</div>
-		{/each}
-	</div>
-{:else}
-	<div>
-		<h1 class="text-3xl lg:text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
-			{headers.job_header[$language]}
-		</h1>
-
-		{#each jobs as job}
-			<div>
-				<br>
-				<h1 class="mb-4 text-purple-600 dark:text-purple-300 text-2xl">
-					{job.job_title[$language]} -
-					<span class="text-purple-900 dark:text-purple-300 text-xl">
-						{job.employer[$language]}
-					</span>
-				</h1>
-				<h1 class="my-2">
-					⏱️ {job.employment_period.start[$language]} - {job.employment_period.end[$language]}
-				</h1>
-				<h1 class="my-2">📍 {job.location[$language]}</h1>
-				<h1 class="my-2">📖 {job.job_description[$language]}</h1>
-				<h1 class="my-2">🖥️ {job.used_technologies[$language]}</h1>
-			</div>
-		{/each}
-	</div>
-{/if}
+	{#each jobs as job}
+		<div>
+			<br />
+			<h1 class="mb-4 text-purple-600 dark:text-purple-300 text-2xl uppercase">
+				{job.job_title[$language]} -
+				<span class="text-purple-900 dark:text-purple-300 text-xl">
+					{job.employer[$language]}
+				</span>
+			</h1>
+			<h1 class="my-2">
+				⏱️ {job.employment_period.start[$language]} - {job.employment_period.end[$language]}
+			</h1>
+			<h1 class="my-2">📍 {job.location[$language]}</h1>
+			<h1 class="my-2">📖 {job.job_description[$language]}</h1>
+			<h1 class="my-2">🖥️ {job.used_technologies[$language]}</h1>
+		</div>
+	{/each}
+</div>

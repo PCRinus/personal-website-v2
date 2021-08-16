@@ -7,13 +7,15 @@
 	let projects = translations.pages.projects;
 </script>
 
-<h1 class="text-3xl lg:text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
+<h1 class="text-3xl lg:text-7xl subpixel-antialiased text-pink-600 dark:text-green-500">
 	{projects.header[$language]}
 </h1>
 
 {#each projects.project as project}
 	<br />
-	<h1 class="my-4 text-purple-600 text-2xl dark:text-purple-300">{project.title[$language]}</h1>
+	<h1 class="mb-4 text-purple-600 text-2xl dark:text-purple-300 uppercase">
+		{project.title[$language]}
+	</h1>
 	<h1>📖 {project.description[$language]}</h1>
 	<h1>🖥️ {project.used_technologies[$language]}</h1>
 	<PrimaryButton>
@@ -22,4 +24,5 @@
 	<SecondaryButton>
 		<a class="mx-auto" href={project.website_link} target="_blank">🌐 Webiste</a>
 	</SecondaryButton>
+	<br />
 {/each}
