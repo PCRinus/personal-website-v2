@@ -52,9 +52,9 @@ export default {
 				},
 				background: {
 					en:
-						"I'm currently a Full Stack Dev <strong>@UnifiedPost</strong>, building tools for the web. I recently graduated from the Polytechnic University of Timișoara | UPT with a Bachelor's in Engineering",
+						'I\'m currently a Full Stack Dev <strong><a href="https://www.unifiedpost.com/en" target="_blank">@UnifiedPost</a></strong>, building tools for the web. I recently graduated from the Polytechnic University of Timișoara | UPT with a Bachelor\'s in Engineering',
 					ro:
-						'În prezent sunt un Full Stack Dev <strong>@UnifiedPost</strong>, construind diverse unelte pentru web. Recent am absolvit Universitatea Politehnică din Timișoara | UPT cu o Diploma de Licență în Inginerie'
+						'În prezent sunt un Full Stack Dev <strong><a href="https://www.unifiedpost.com/en" target="_blank">@UnifiedPost</a></strong>, construind diverse unelte pentru web. Recent am absolvit Universitatea Politehnică din Timișoara | UPT cu o Diploma de Licență în Inginerie'
 				},
 				skills: {
 					languages: ['JavaScript', 'PHP', 'HTML', 'CSS/Sass', 'C#', 'SQL'],
