@@ -70,28 +70,6 @@ export default {
 					ro: 'Unelte'
 				}
 			},
-			education: {
-				header: {
-					en: "Whenere I've studied",
-					ro: 'Unde am studiat'
-				},
-				institiution: {
-					en: 'Polytechnic University of Timișoara - UPT',
-					ro: 'Universitatea Politehnică din Timișoara - UPT'
-				},
-				diploma: {
-					en: "Bachelor's of Engineering - BEng",
-					ro: 'Diplomă de inginer'
-				},
-				period: {
-					start: '01-09-2017',
-					end: '01-07-2021'
-				},
-				description: {
-					en: 'Elit cillum nisi et consequat in veniam qui culpa labore.',
-					ro: 'Est voluptate nulla anim ipsum et nisi nisi.'
-				}
-			},
 			cv: {
 				button: {
 					en: 'Download my CV',
@@ -104,34 +82,10 @@ export default {
 			}
 		},
 		experiences: {
-			education_header: {
-				en: 'Education',
-				ro: 'Educație'
-			},
 			job_header: {
 				en: 'Work experience',
 				ro: 'Experiență de muncă'
 			},
-			education_experience: [
-				{
-					institiution: {
-						en: 'Polytechnic University of Timisoara - UPT',
-						ro: 'Universitatea Politehnică din Timișoara - UPT'
-					},
-					diploma: {
-						en: "Bachelor's of Engineering - BEng",
-						ro: 'Diplomă de inginer'
-					},
-					period: {
-						start: '01-09-2017',
-						end: '01-07-2021'
-					},
-					description: {
-						en: 'Elit cillum nisi et consequat in veniam qui culpa labore.',
-						ro: 'Est voluptate nulla anim ipsum et nisi nisi.'
-					}
-				}
-			],
 			job_experience: [
 				{
 					job_title: {

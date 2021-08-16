@@ -23,7 +23,7 @@
 	<p>{@html t.about_me.background[$language]}</p>
 
 	<div class="mt-2 flex flex-row flex-wrap justify-between">
-		<div>
+		<div class="mt-2">
 			<h2
 				class="lg:text-2xl my-2 uppercase font-semibold subpixel-antialiased text-pink-600 dark:text-green-500"
 			>
@@ -35,7 +35,7 @@
 				{/each}
 			</ul>
 		</div>
-		<div class="mx-4">
+		<div class="mx-4 mt-2">
 			<h2
 				class="lg:text-2xl my-2 uppercase font-semibold subpixel-antialiased text-pink-600 dark:text-green-500"
 			>
@@ -47,7 +47,7 @@
 				{/each}
 			</ul>
 		</div>
-		<div>
+		<div class="mt-2">
 			<h2
 				class="lg:text-2xl my-2 uppercase font-semibold subpixel-antialiased text-pink-600 dark:text-green-500"
 			>
@@ -63,16 +63,6 @@
 </div>
 
 <hr class="my-8 text-pink-600 dark:text-green-500" />
-
-<div class="education">
-	<h1 class="text-5xl lg:text-7xl mb-8 subpixel-antialiased text-pink-600 dark:text-green-500">
-		{t.education.header[$language]}
-	</h1>
-	<h2 class="subpixel-antialiased">{t.education.institiution[$language]}</h2>
-	<h2 class="subpixel-antialiased">🎓 {t.education.diploma[$language]}</h2>
-	<h2 class="subpixel-antialiased">🕓 {t.education.period.start}</h2>
-	<h2 class="subpixel-antialiased">{t.education.period.end}</h2>
-</div>
 
 <style>
 	#wave {
