@@ -33,12 +33,74 @@ export default {
 		index: {
 			hero_greeting: {
 				en: 'Hey! I am Mircea',
-				ro:
-					'Salut! Numele meu e Mircea'
+				ro: 'Salut! Eu sunt Mircea'
 			},
 			hero_subgreeting: {
-				en: "I build web applications that run across platforms and devices!",
-				ro: "Construiesc aplicații web ce rulează pe diverse platforme și dispozitive!"
+				en:
+					'I am a Full Stack Web Developer who builds web applications that run across platforms and devices!',
+				ro:
+					'Sunt un Full Stack Developer ce construiește aplicații web ce rulează pe diverse platforme și dispozitive!'
+			},
+			about_me: {
+				header: {
+					en: 'About me',
+					ro: 'Despre mine'
+				},
+				background: {
+					en:
+						"I'm currently a Full Stack Dev <strong>@UnifiedPost</strong>, building tools for the web. I recently graduated from the Polytechnic University of Timișoara | UPT with a Bachelor's in Engineering",
+					ro:
+						'În prezent sunt un Full Stack Dev <strong>@UnifiedPost</strong>, construind diverse unelte pentru web. Recent am absolvit Universitatea Politehnică din Timișoara | UPT cu o Diploma de Licență în Inginerie'
+				},
+				skills: {
+					languages: ['JavaScript', 'PHP', 'HTML', 'CSS/Sass', 'C#', 'SQL'],
+					frameworks: ['Svelte & SvelteKit', 'React', 'NodeJS', '.NET'],
+					tools: ['VS Code', 'Git & GitHub', 'Netlify', 'Heroku', 'Jira', 'Postman']
+				},
+				languages_header: {
+					en: 'Languages',
+					ro: 'Limbaje'
+				},
+				frameworks_header: {
+					en: 'Frameworks',
+					ro: 'Framework-uri'
+				},
+				tools_header: {
+					en: 'Tools',
+					ro: 'Unelte'
+				}
+			},
+			education: {
+				header: {
+					en: "Whenere I've studied",
+					ro: 'Unde am studiat'
+				},
+				institiution: {
+					en: 'Polytechnic University of Timișoara - UPT',
+					ro: 'Universitatea Politehnică din Timișoara - UPT'
+				},
+				diploma: {
+					en: "Bachelor's of Engineering - BEng",
+					ro: 'Diplomă de inginer'
+				},
+				period: {
+					start: '01-09-2017',
+					end: '01-07-2021'
+				},
+				description: {
+					en: 'Elit cillum nisi et consequat in veniam qui culpa labore.',
+					ro: 'Est voluptate nulla anim ipsum et nisi nisi.'
+				}
+			},
+			cv: {
+				button: {
+					en: 'Download my CV',
+					ro: 'Descarcă-mi CV-ul'
+				},
+				text: {
+					en: 'Take a look over my resume',
+					ro: 'Aruncă o privire peste CV-ul meu'
+				}
 			}
 		},
 		experiences: {
@@ -259,8 +321,8 @@ export default {
 		},
 		error: {
 			error_message: {
-				en: "Page not found! Sorry for the inconvenience 🙏🏻",
-				ro: "Pagina nu a fost găsită. Ne pare rău! 🙏🏻"
+				en: 'Page not found! Sorry for the inconvenience 🙏🏻',
+				ro: 'Pagina nu a fost găsită. Ne pare rău! 🙏🏻'
 			}
 		}
 	}

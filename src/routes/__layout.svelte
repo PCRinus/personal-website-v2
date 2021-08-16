@@ -5,6 +5,7 @@
 	import * as Cookies from '../cookies';
 	import { language, theme } from '../stores';
 	import Swoosh from '../icons/Swoosh.svelte';
+	import BottomSwoosh from '../icons/BottomSwoosh.svelte';
 	import { page } from '$app/stores';
 
 	onMount(async () => {
@@ -39,6 +40,7 @@
 	<div class="content p-8 max-w-5xl mx-auto -my-12 md:-my-0">
 		<slot />
 	</div>
+	<!-- <BottomSwoosh themeChange={$theme} color={$theme === 'light' ? 'AFD3D5' : '5A5D72'} /> -->
 </div>
 
 <!-- <Footer /> -->
