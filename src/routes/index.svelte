@@ -4,8 +4,6 @@
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 
 	let t = translations.pages.index;
-
-	function getCV() {}
 </script>
 
 <h1 class="text-5xl lg:text-7xl mb-8 subpixel-antialiased text-pink-600 dark:text-green-500">
@@ -70,7 +68,12 @@
 	<h1 class="text-5xl lg:text-7xl my-8 subpixel-antialiased text-pink-600 dark:text-green-500">
 		{t.cv.text[$language]}
 	</h1>
-	<PrimaryButton on:click={getCV}>📝 {t.cv.button[$language]}</PrimaryButton>
+	<PrimaryButton
+		><a
+			href="https://drive.google.com/file/d/19wP-B6hlkH9jehZlzqd8habHch8mhC8G/view?usp=sharing"
+			target="_blank">📝 {t.cv.button[$language]}</a
+		></PrimaryButton
+	>
 </div>
 
 <!-- <style>
