@@ -29,7 +29,7 @@
 			<span>
 				{form.form_label_email}
 			</span>
-			<EmailInput netlifyName="email" />
+			<EmailInput netlifyName="email1" />
 		</label>
 
 		<!-- svelte-ignore a11y-label-has-associated-control -->
