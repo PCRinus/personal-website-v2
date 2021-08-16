@@ -1,7 +1,7 @@
 <script>
 	import translations from '../translations';
 	import { language } from '../stores';
-	// import ProfileDescription from '../components/ProfileDescription.svelte';
+	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 
 	let t = translations.pages.index;
 </script>
@@ -64,6 +64,13 @@
 
 <hr class="my-8 text-pink-600 dark:text-green-500" />
 
+<div class="resume">
+	<h1 class="text-5xl lg:text-7xl my-8 subpixel-antialiased text-pink-600 dark:text-green-500">
+		{t.cv.text[$language]}
+	</h1>
+	<PrimaryButton>📝 {t.cv.button[$language]}</PrimaryButton>
+</div>
+
 <style>
 	#wave {
 		animation: wave 2s ease infinite alternate;
@@ -78,7 +85,7 @@
 		}
 	}
 
-	ul:first-child {
-		@apply text-pink-600;
+	.intro {
+		height: 100vh;
 	}
 </style>
