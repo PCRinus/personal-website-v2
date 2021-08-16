@@ -40,10 +40,9 @@
 	<div class="content p-8 max-w-5xl mx-auto -my-12 md:-my-0">
 		<slot />
 	</div>
-	<!-- <BottomSwoosh themeChange={$theme} color={$theme === 'light' ? 'AFD3D5' : '5A5D72'} /> -->
+	<Footer />
 </div>
 
-<!-- <Footer /> -->
 <style>
 	@tailwind base;
 	@tailwind components;

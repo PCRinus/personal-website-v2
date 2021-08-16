@@ -24,8 +24,12 @@ export default {
 		},
 		footer: {
 			text: {
-				en: 'Created with ❤️ and ☕ by Casapu Mircea',
-				ro: 'Creat cu ❤️ și ☕ de Casapu Mircea'
+				en: 'Designed and developed by <strong class="text-pink-700 dark:text-green-500">Mircea Casapu</strong> © 2021',
+				ro: 'Proiectat si dezvoltat de <strong>Mircea Casapu</strong> © 2021'
+			},
+			coffee: {
+				en: "Powered by ☕",
+				ro: "Cu ajutorul ☕"
 			}
 		}
 	},

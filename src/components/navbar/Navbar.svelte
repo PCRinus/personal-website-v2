@@ -16,7 +16,7 @@
 	}
 </script>
 
-<nav class="shadow-lg pt-4 lg:pt-8 bg-cadetBlue-light dark:bg-jet-light">
+<nav class="pt-4 lg:pt-8 bg-cadetBlue-light dark:bg-jet-light">
 	<div class="max-w-5xl mx-auto px-4">
 		<div class="flex justify-between">
 			<div class="flex items-center">
