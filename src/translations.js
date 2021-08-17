@@ -77,14 +77,16 @@ export default {
 				}
 			},
 			cv: {
-				button: {
-					en: 'Download my CV',
-					ro: 'Descarcă-mi CV-ul'
-				},
-				text: {
-					en: 'My resume',
-					ro: 'CV-ul meu'
-				}
+				en: 'Download my CV',
+				ro: 'Descarcă-mi CV-ul'
+			},
+			github: {
+				en: 'View my GitHub',
+				ro: 'Github-ul meu'
+			},
+			linkedin: {
+				en: 'Add me on LinkedIn',
+				ro: 'Adaugă-mă pe LinkedIn'
 			}
 		},
 		experiences: {

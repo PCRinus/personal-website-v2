@@ -2,7 +2,6 @@
 	import translations from '../translations';
 	import { language } from '../stores';
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
-	import GitHubIcon from '../icons/GitHubIcon.svelte';
 
 	let t = translations.pages.index;
 </script>
@@ -18,14 +17,15 @@
 	<PrimaryButton
 		><a
 			href="https://drive.google.com/file/d/19wP-B6hlkH9jehZlzqd8habHch8mhC8G/view?usp=sharing"
-			target="_blank">📝 {t.cv.button[$language]}</a
+			target="_blank">📝 {t.cv[$language]}</a
 		></PrimaryButton
 	>
 	<PrimaryButton text_color={'text-white hover:text-gray-100'} bg_color={'bg-github'}
-		>GitHub</PrimaryButton
+		><a href="https://github.com/PCRinus" target="_blank">{t.github[$language]}</a></PrimaryButton
 	>
 	<PrimaryButton text_color={'text-white hover:text-gray-100'} bg_color={'bg-linkedin'}
-		>LinkedIn</PrimaryButton
+		><a href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">{t.linkedin[$language]}</a
+		></PrimaryButton
 	>
 </div>
 
