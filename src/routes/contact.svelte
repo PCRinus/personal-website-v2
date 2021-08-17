@@ -44,18 +44,20 @@
 </form> -->
 
 <form name="test" method="post" netlify>
-	<input type="hidden" name="form-name" value="test" />
-	<!-- <input type="text" name="bot-field" /> -->
-	<p>
-		<label>{form.form_label_name[$language]}<input type="text" name="name" /></label>
-	</p>
-	<p>
-		<label>{form.form_label_email}<input type="email" name="email" /></label>
-	</p>
-	<p>
-		<label>{form.form_label_message[$language]}<textarea name="message" /></label>
-	</p>
-	<p>
-		<button type="submit">Send</button>
-	</p>
+	<div class="flex flex-col my-4 max-w-lg">
+		<input type="hidden" name="form-name" value="test" />
+		<!-- <input type="text" name="bot-field" /> -->
+		<p>
+			<label>{form.form_label_name[$language]}<input type="text" name="name" /></label>
+		</p>
+		<p>
+			<label>{form.form_label_email}<input type="email" name="email" /></label>
+		</p>
+		<p>
+			<label>{form.form_label_message[$language]}<textarea name="message" /></label>
+		</p>
+		<p>
+			<button type="submit">Send</button>
+		</p>
+	</div>
 </form>
