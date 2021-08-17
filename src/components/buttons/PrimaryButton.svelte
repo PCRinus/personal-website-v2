@@ -1,6 +1,8 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
 	export let disabled = '';
+	export let bg_color = 'bg-purple-600 hover:bg-purple-700';
+	export let text_color = 'text-white hover:text-gray-100';
 
 	const dispatch = createEventDispatcher();
 
@@ -10,7 +12,7 @@
 </script>
 
 <button
-	class="w-auto h-auto my-4 px-4 py-2 text-white bg-purple-600 hover:bg-purple-700 hover:text-gray-100 rounded-sm disabled:opacity-50 {disabled}"
+	class="w-auto h-auto my-4 px-4 py-2 {text_color} {bg_color} rounded-sm disabled:opacity-50 {disabled}"
 	on:click={click}
 >
 	<slot />

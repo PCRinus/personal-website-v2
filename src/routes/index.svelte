@@ -21,6 +21,12 @@
 			target="_blank">📝 {t.cv.button[$language]}</a
 		></PrimaryButton
 	>
+	<PrimaryButton text_color={'text-white hover:text-gray-100'} bg_color={'bg-github'}
+		>GitHub</PrimaryButton
+	>
+	<PrimaryButton text_color={'text-white hover:text-gray-100'} bg_color={'bg-linkedin'}
+		>LinkedIn</PrimaryButton
+	>
 </div>
 
 <hr class="text-pink-600 dark:text-green-500" />

@@ -1,24 +1,13 @@
 <script>
 	import translations from '../translations';
 	import { language } from '../stores';
-	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 
 	let headers = translations.pages.experiences;
 	let educations = translations.pages.experiences.education_experience;
 	let jobs = translations.pages.experiences.job_experience;
 
 	let sectionToggle = true;
-
-	function toggleExperience() {
-		sectionToggle = !sectionToggle;
-	}
 </script>
-
-<!-- <div class="flex -mt-16 justify-end">
-	<PrimaryButton on:click={toggleExperience}>
-		{sectionToggle === true ? 'Education' : 'Job Experience'}
-	</PrimaryButton>
-</div> -->
 
 <div>
 	<h1 class="text-3xl lg:text-7xl subpixel-antialiased text-pink-600 dark:text-green-500">

@@ -27,6 +27,13 @@ module.exports = {
 				light: '#5A5D72',
 				DEFAULT: '#30323D',
 				dark: '#1B1C22'
+			},
+			linkedin: {
+				DEFAULT: '#0e76a8'
+			},
+			github: {
+				DEFAULT: '#2b3137',
+				dark: '#24292d'
 			}
 		},
 		scale: {
