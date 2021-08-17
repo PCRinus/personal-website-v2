@@ -1,4 +1,6 @@
-<script>
+<script context="module">
+	export const prerender = true;
+
 	import translations from '../translations';
 	import { language, theme } from '../stores';
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
