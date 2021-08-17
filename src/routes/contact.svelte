@@ -22,21 +22,21 @@
 			<span>
 				{form.form_label_name[$language]}
 			</span>
-			<TextInput name="name" />
+			<TextInput netlifyName="name" />
 		</label>
 
 		<label class="mt-2">
 			<span>
 				{form.form_label_email}
 			</span>
-			<EmailInput name="email" />
+			<EmailInput netlifyName="email1" />
 		</label>
 
 		<label class="mt-2">
 			<span>
 				{form.form_label_message[$language]}
 			</span>
-			<TextArea name="message" />
+			<TextArea netlifyName="message" />
 		</label>
 
 		<PrimaryButton type="submit">✉️ {form.form_submit_button[$language]}</PrimaryButton>
