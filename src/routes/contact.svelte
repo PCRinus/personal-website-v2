@@ -34,7 +34,7 @@
 
 		<label class="mt-2">
 			<span>
-				{form.form_label_message[$language]}
+				{form.form_label_email}
 			</span>
 			<TextArea name="message" />
 		</label>
@@ -43,19 +43,39 @@
 	</div>
 </form> -->
 
-<form name="test" method="post" netlify>
-	<input type="hidden" name="form-name" value="test" />
-	<!-- <input type="text" name="bot-field" /> -->
-	<p>
-		<label>Your Name: <input type="text" name="name" /></label>
-	</p>
-	<p>
-		<label>Your Email: <input type="email" name="email" /></label>
-	</p>
-	<p>
-		<label>Message: <textarea name="message" /></label>
-	</p>
-	<p>
-		<button type="submit">Send</button>
-	</p>
+<form name="contact" method="post" netlify netlify-honeypot="bot-field">
+	<div class="flex flex-col my-4 max-w-lg">
+		<p class="hidden">
+			<label>Noheypot for bots<input type="text" name="bot-field" /></label>
+		</p>
+		<p>
+			<label
+				>{form.form_label_name[$language]}<input
+					type="text"
+					name="name"
+					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
+				/></label
+			>
+		</p>
+		<p>
+			<label
+				>{form.form_label_email}<input
+					type="email"
+					name="email"
+					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
+				/></label
+			>
+		</p>
+		<p>
+			<label
+				>{form.form_label_message[$language]}<textarea
+					name="message"
+					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
+				/></label
+			>
+		</p>
+		<p>
+			<button type="submit">Send</button>
+		</p>
+	</div>
 </form>
