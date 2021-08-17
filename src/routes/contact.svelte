@@ -43,7 +43,7 @@
 	</div>
 </form> -->
 
-<form name="test" method="post" netlify>
+<form name="contact" method="post" netlify>
 	<div class="flex flex-col my-4 max-w-lg">
 		<input type="hidden" name="form-name" value="test" />
 		<!-- <input type="text" name="bot-field" /> -->
