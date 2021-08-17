@@ -16,9 +16,8 @@
 	{form.form_header[$language]}
 </h1>
 
-<form name="contact" method="POST" data-netlify="true">
+<!-- <form name="contact" method="POST" data-netlify="true">
 	<div class="flex flex-col my-4 max-w-lg">
-		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label class="mt-2">
 			<span>
 				{form.form_label_name[$language]}
@@ -26,7 +25,6 @@
 			<TextInput name="name" />
 		</label>
 
-		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label class="mt-2">
 			<span>
 				{form.form_label_email}
@@ -34,7 +32,6 @@
 			<EmailInput name="email" />
 		</label>
 
-		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label class="mt-2">
 			<span>
 				{form.form_label_message[$language]}
@@ -44,5 +41,21 @@
 
 		<PrimaryButton type="submit">✉️ {form.form_submit_button[$language]}</PrimaryButton>
 	</div>
+</form> -->
+
+<form name="test" method="post" netlify>
+	<input type="hidden" name="form-name" value="test" />
+	<!-- <input type="text" name="bot-field" /> -->
+	<p>
+		<label>Your Name: <input type="text" name="name" /></label>
+	</p>
+	<p>
+		<label>Your Email: <input type="email" name="email" /></label>
+	</p>
+	<p>
+		<label>Message: <textarea name="message" /></label>
+	</p>
+	<p>
+		<button type="submit">Send</button>
+	</p>
 </form>
-<!-- <Mailbox themeChange={theme} primary={$theme === "light" ? "#BE185D" : "#10B981"}/> -->
