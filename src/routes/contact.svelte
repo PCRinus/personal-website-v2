@@ -34,7 +34,7 @@
 
 		<label class="mt-2">
 			<span>
-				{form.form_label_email}
+				{form.form_label_message[$language]}
 			</span>
 			<TextArea name="message" />
 		</label>
@@ -43,11 +43,10 @@
 	</div>
 </form> -->
 
-<form name="contact" method="post" netlify netlify-honeypot="bot-field">
+<form name="contact" method="post" netlify>
 	<div class="flex flex-col my-4 max-w-lg">
-		<p class="hidden">
-			<label>Noheypot for bots<input type="text" name="bot-field" /></label>
-		</p>
+		<input type="hidden" name="form-name" value="test" />
+		<!-- <input type="text" name="bot-field" /> -->
 		<p>
 			<label
 				>{form.form_label_name[$language]}<input
@@ -75,7 +74,11 @@
 			>
 		</p>
 		<p>
-			<button type="submit">Send</button>
+			<button
+				type="submit"
+				class="w-auto h-auto my-4 px-4 py-2 text-white bg-purple-600 hover:bg-purple-700 hover:text-gray-100 rounded-sm disabled:opacity-50"
+				>✉️ {form.form_submit_button[$language]}</button
+			>
 		</p>
 	</div>
 </form>
