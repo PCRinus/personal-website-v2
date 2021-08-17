@@ -16,33 +16,6 @@
 	{form.form_header[$language]}
 </h1>
 
-<!-- <form name="contact" method="POST" data-netlify="true">
-	<div class="flex flex-col my-4 max-w-lg">
-		<label class="mt-2">
-			<span>
-				{form.form_label_name[$language]}
-			</span>
-			<TextInput name="name" />
-		</label>
-
-		<label class="mt-2">
-			<span>
-				{form.form_label_email}
-			</span>
-			<EmailInput name="email" />
-		</label>
-
-		<label class="mt-2">
-			<span>
-				{form.form_label_message[$language]}
-			</span>
-			<TextArea name="message" />
-		</label>
-
-		<PrimaryButton type="submit">✉️ {form.form_submit_button[$language]}</PrimaryButton>
-	</div>
-</form> -->
-
 <form name="contact" method="post" netlify>
 	<div class="flex flex-col my-4 max-w-lg">
 		<input type="hidden" name="form-name" value="test" />
