@@ -43,9 +43,9 @@ export default {
 			},
 			hero_subgreeting: {
 				en:
-					'I am a Full Stack Web Developer who builds web applications that run across platforms and devices!',
+					'I am a <strong>Full Stack Web Developer</strong> who builds web applications that run across platforms and devices!',
 				ro:
-					'Sunt un Full Stack Developer ce construiește aplicații web ce rulează pe diverse platforme și dispozitive!'
+					'Sunt un <strong>Full Stack Web Developer</strong> ce construiește aplicații web ce rulează pe diverse platforme și dispozitive!'
 			},
 			about_me: {
 				header: {

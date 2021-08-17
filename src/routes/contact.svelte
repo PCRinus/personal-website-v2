@@ -1,4 +1,6 @@
-<script>
+<script context="module">
+	export const prerender = true;
+
 	import translations from '../translations';
 	import { language, theme } from '../stores';
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
@@ -14,9 +16,8 @@
 	{form.form_header[$language]}
 </h1>
 
-<form name="contact" method="POST" data-netlify="true">
+<!-- <form name="contact" method="POST" data-netlify="true">
 	<div class="flex flex-col my-4 max-w-lg">
-		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label class="mt-2">
 			<span>
 				{form.form_label_name[$language]}
@@ -24,7 +25,6 @@
 			<TextInput netlifyName="name" />
 		</label>
 
-		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label class="mt-2">
 			<span>
 				{form.form_label_email}
@@ -32,7 +32,6 @@
 			<EmailInput netlifyName="email1" />
 		</label>
 
-		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label class="mt-2">
 			<span>
 				{form.form_label_message[$language]}
@@ -42,5 +41,44 @@
 
 		<PrimaryButton type="submit">✉️ {form.form_submit_button[$language]}</PrimaryButton>
 	</div>
+</form> -->
+
+<form name="contact" method="post" netlify>
+	<div class="flex flex-col my-4 max-w-lg">
+		<input type="hidden" name="form-name" value="test" />
+		<!-- <input type="text" name="bot-field" /> -->
+		<p>
+			<label
+				>{form.form_label_name[$language]}<input
+					type="text"
+					name="name"
+					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
+				/></label
+			>
+		</p>
+		<p>
+			<label
+				>{form.form_label_email}<input
+					type="email"
+					name="email"
+					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
+				/></label
+			>
+		</p>
+		<p>
+			<label
+				>{form.form_label_message[$language]}<textarea
+					name="message"
+					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
+				/></label
+			>
+		</p>
+		<p>
+			<button
+				type="submit"
+				class="w-auto h-auto my-4 px-4 py-2 text-white bg-purple-600 hover:bg-purple-700 hover:text-gray-100 rounded-sm disabled:opacity-50"
+				>✉️ {form.form_submit_button[$language]}</button
+			>
+		</p>
+	</div>
 </form>
-<!-- <Mailbox themeChange={theme} primary={$theme === "light" ? "#BE185D" : "#10B981"}/> -->
