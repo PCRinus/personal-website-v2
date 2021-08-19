@@ -29,7 +29,8 @@ module.exports = {
 				dark: '#1B1C22'
 			},
 			linkedin: {
-				DEFAULT: '#0e76a8'
+				DEFAULT: '#0e76a8',
+				dark: "#0a5578"
 			},
 			github: {
 				DEFAULT: '#2b3137',

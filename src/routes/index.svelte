@@ -20,10 +20,10 @@
 			target="_blank">📝 {t.cv[$language]}</a
 		></PrimaryButton
 	>
-	<PrimaryButton text_color={'text-white hover:text-gray-100'} bg_color={'bg-github'}
+	<PrimaryButton text_color={'text-white hover:text-gray-100'} bg_color={'bg-github hover:bg-github-dark'}
 		><a href="https://github.com/PCRinus" target="_blank">{t.github[$language]}</a></PrimaryButton
 	>
-	<PrimaryButton text_color={'text-white hover:text-gray-100'} bg_color={'bg-linkedin'}
+	<PrimaryButton text_color={'text-white hover:text-gray-100'} bg_color={'bg-linkedin hover:bg-linkedin-dark'}
 		><a href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">{t.linkedin[$language]}</a
 		></PrimaryButton
 	>
