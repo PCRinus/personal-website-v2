@@ -1,9 +1,7 @@
 <script>
 	import translations from '../../translations';
 	import { language, mobileNavMenu } from '../../stores';
-	import ThemeSlider from './ThemeSlider.svelte';
-	import LanguageSlider from './LanguageSlider.svelte';
-	import { fade, fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	import MobileMenuButton from './MobileMenuButton.svelte';
 
 	export let segment;
@@ -58,9 +56,7 @@
 				</div>
 			</div>
 			<!-- Secondary Navbar items -->
-			<div class="hidden md:flex items-center">
-				<ThemeSlider />
-			</div>
+			<div class="hidden md:flex items-center" />
 			<!-- Mobile menu button -->
 			<div class="md:hidden flex items-center">
 				<MobileMenuButton on:toggleMobileNav={toggleMobileNav} {visible} />

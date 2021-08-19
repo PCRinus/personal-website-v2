@@ -77,17 +77,17 @@
 	</div>
 </div>
 
-<!-- <style>
+<style>
 	#wave {
 		animation: wave 2s ease infinite alternate;
 	}
 
 	@keyframes wave {
 		from {
-			transform: rotateX(0deg);
+			transform: scale(1.0)
 		}
 		to {
-			transform: rotateX(20deg);
+			transform: scale(1.5)
 		}
 	}
-</style> -->
+</style>
