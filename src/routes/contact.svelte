@@ -11,9 +11,9 @@
 	{form.form_header[$language]}
 </h1>
 
-<form name="contact" method="post" netlify>
+<form name="contact" action="form_success" method="post" netlify>
 	<div class="flex flex-col my-4 max-w-lg">
-		<input type="hidden" name="form-name" value="test" />
+		<input type="hidden" name="form-name" value="contact" />
 		<!-- <input type="text" name="bot-field" /> -->
 		<p>
 			<label

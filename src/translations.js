@@ -281,6 +281,24 @@ export default {
 				ro: 'Trimite'
 			}
 		},
+		form_success: {
+			header: {
+				en: "Form submitted",
+				ro: "Formularul a fost trimis"
+			},
+			thanks: {
+				en: "Thank you for sending me a message",
+				ro: "Mulțumesc că mi-ai trimis un mesaj"
+			},
+			subheader: {
+				en: "I will get back to you as soon as possible.",
+				ro: "Iți voi răspunde cât mai repede posibil."
+			},
+			reach_out: {
+				en: "Reach out on LinkedIn as well",
+				ro: "Contaceaza-mă și pe LinkedIn"
+			}
+		},
 		error: {
 			error_message: {
 				en: 'Page not found! Sorry for the inconvenience 🙏🏻',
