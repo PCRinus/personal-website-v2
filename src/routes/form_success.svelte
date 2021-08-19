@@ -3,6 +3,7 @@
 	import FormSubmitted from '../images/FormSubmitted.svelte';
 	import { language, theme } from '../stores';
 	import translations from '../translations';
+	import LinkedIn from '../icons/LinkedIn.svelte';
 
 	const succesMessage = translations.pages.form_success;
 </script>
@@ -15,7 +16,7 @@
 			phoneBackgroundColor={$theme === 'light' ? '#BE185D' : '#10B981'}
 		/>
 	</div>
-	<div class="">
+	<div class="mx-auto">
 		<h1 class="mb-4 text-3xl lg:text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
 			{succesMessage.header[$language]}
 		</h1>
@@ -24,7 +25,11 @@
 		</h1>
 		<h1>{succesMessage.subheader[$language]}</h1>
 		<PrimaryButton bg_color={'bg-linkedin'}
-			><a href="https://www.linkedin.com/in/mircea-casapu/">{succesMessage.reach_out[$language]}</a>
+			><a href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
+				<div class="flex items-center gap-x-2">
+					<LinkedIn />{succesMessage.reach_out[$language]}
+				</div>
+			</a>
 		</PrimaryButton>
 	</div>
 </div>

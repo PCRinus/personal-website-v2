@@ -38,7 +38,6 @@
 {/key}
 
 <style>
-	#checkmark-bg,
 	#checkmark {
 		animation: scale 1s ease infinite alternate;
 		transform-origin: center;
@@ -49,7 +48,7 @@
 			transform: scale(1);
 		}
 		to {
-			transform: scale(1.2);
+			transform: scale(1.4);
 		}
 	}
 </style>
