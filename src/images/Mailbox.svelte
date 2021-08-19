@@ -1,7 +1,6 @@
 <script>
 	export let themeChange;
 	export let primary;
-	export let secondary;
 </script>
 
 {#key themeChange}

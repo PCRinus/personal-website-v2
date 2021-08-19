@@ -1,7 +1,6 @@
 <script>
 	export let themeChange;
 	export let primary;
-	export let width;
 </script>
 
 {#key themeChange}
@@ -10,7 +9,7 @@
 		id="aa03ddf9-f8f2-4819-a4ce-be9b0a220741"
 		data-name="Layer 1"
 		xmlns="http://www.w3.org/2000/svg"
-		width="calc(100vw-30%)"
+		width="auto"
 		height="auto"
 		viewBox="0 0 1119.60911 699"
 		><title>server down</title><circle cx="292.60911" cy="213" r="213" fill="#f2f2f2" /><path
@@ -200,8 +199,3 @@
 		/></svg
 	>
 {/key}
-
-<style>
-	.server-down {
-	}
-</style>
