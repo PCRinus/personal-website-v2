@@ -3,6 +3,8 @@
 	import { language, mobileNavMenu } from '../../stores';
 	import { fly } from 'svelte/transition';
 	import MobileMenuButton from './MobileMenuButton.svelte';
+	import ThemeSwitch from './ThemeSwitch.svelte';
+	import LanguageSwitch from './LanguageSwitch.svelte';
 
 	export let segment;
 	let t = translations.components.navbar;
@@ -56,7 +58,10 @@
 				</div>
 			</div>
 			<!-- Secondary Navbar items -->
-			<div class="hidden md:flex items-center" />
+			<div class="hidden md:flex items-center">
+				<ThemeSwitch />
+				<LanguageSwitch />
+			</div>
 			<!-- Mobile menu button -->
 			<div class="md:hidden flex items-center">
 				<MobileMenuButton on:toggleMobileNav={toggleMobileNav} {visible} />
@@ -95,6 +100,7 @@
 					: 'text-black dark:text-white'}"
 				on:click={toggleMobileNav}>✉️ {t.contact[$language]}</a
 			>
+			<ThemeSwitch />
 		</div>
 	{/if}
 </nav>
