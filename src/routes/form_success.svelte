@@ -3,7 +3,6 @@
 	import FormSubmitted from '../images/FormSubmitted.svelte';
 	import { language, theme } from '../stores';
 	import translations from '../translations';
-	import LinkedIn from '../icons/LinkedIn.svelte';
 
 	const succesMessage = translations.pages.form_success;
 </script>
@@ -27,7 +26,7 @@
 		<PrimaryButton bg_color={'bg-linkedin'}
 			><a href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
 				<div class="flex items-center gap-x-2">
-					<LinkedIn />{succesMessage.reach_out[$language]}
+					{succesMessage.reach_out[$language]}
 				</div>
 			</a>
 		</PrimaryButton>

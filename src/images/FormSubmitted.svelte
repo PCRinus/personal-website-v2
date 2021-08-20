@@ -45,10 +45,10 @@
 
 	@keyframes scale {
 		from {
-			transform: scale(1);
+			transform: scale(0.9);
 		}
 		to {
-			transform: scale(1.4);
+			transform: scale(1.5);
 		}
 	}
 </style>

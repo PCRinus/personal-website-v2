@@ -5,7 +5,6 @@
 	import * as Cookies from '../cookies';
 	import { language, theme } from '../stores';
 	import Swoosh from '../icons/Swoosh.svelte';
-	import BottomSwoosh from '../icons/BottomSwoosh.svelte';
 	import { page } from '$app/stores';
 
 	onMount(async () => {
