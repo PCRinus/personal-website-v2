@@ -60,7 +60,7 @@
 			<!-- Secondary Navbar items -->
 			<div class="hidden md:flex items-center">
 				<ThemeSwitch />
-				<LanguageSwitch />
+				<!-- <LanguageSwitch /> -->
 			</div>
 			<!-- Mobile menu button -->
 			<div class="md:hidden flex items-center">
