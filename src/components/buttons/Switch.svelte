@@ -2,6 +2,8 @@
 	import { createEventDispatcher } from 'svelte';
 	export let checked = false;
 
+	let bgGreen = 'dark:bg-green-500';
+
 	const dispatch = createEventDispatcher();
 
 	function clickSwitch() {
@@ -16,7 +18,7 @@
 	<label class="switch w-16 h-8 relative inline-block">
 		<input class="sr-only" type="checkbox" bind:checked on:click={clickSwitch} />
 		<span
-			class="slider absolute cursor-pointer inset-0 bg-gray-500 dark:bg-gray-300 before:bg-pink-700 dark:before:bg-green-500 rounded-3xl"
+			class="slider absolute cursor-pointer inset-0 bg-gray-50 dark:bg-gray-300 before:bg-gray-700 rounded-3xl"
 		/>
 	</label>
 
@@ -43,5 +45,6 @@
 		-webkit-transform: translateX(26px);
 		-ms-transform: translateX(26px);
 		transform: translateX(28px);
+		@apply bg-purple-700;
 	}
 </style>
