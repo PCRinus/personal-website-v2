@@ -5,7 +5,7 @@
 	import * as Cookies from '../../cookies';
 
 	let checked;
-	let current_theme
+	let current_theme;
 
 	onMount(async () => {
 		current_theme = await Cookies.getCookie('theme');
@@ -20,6 +20,6 @@
 </script>
 
 <Switch {checked} on:themeChange={changeTheme}>
-	<span slot="left-label">☀️</span>
-	<span slot="right-label">🌙</span>
+	<span class="text-xl md:text-2xl" slot="left-label">☀️</span>
+	<span class="text-xl md:text-2xl" slot="right-label">🌙</span>
 </Switch>

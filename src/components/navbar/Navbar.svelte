@@ -58,9 +58,9 @@
 				</div>
 			</div>
 			<!-- Secondary Navbar items -->
-			<div class="hidden md:flex items-center">
+			<div class="hidden md:flex items-center gap-x-4">
 				<ThemeSwitch />
-				<!-- <LanguageSwitch /> -->
+				<LanguageSwitch />
 			</div>
 			<!-- Mobile menu button -->
 			<div class="md:hidden flex items-center">
@@ -100,7 +100,10 @@
 					: 'text-black dark:text-white'}"
 				on:click={toggleMobileNav}>✉️ {t.contact[$language]}</a
 			>
-			<ThemeSwitch />
+			<div class="flex px-4 py-4 gap-x-4">
+				<ThemeSwitch />
+				<LanguageSwitch />
+			</div>
 		</div>
 	{/if}
 </nav>

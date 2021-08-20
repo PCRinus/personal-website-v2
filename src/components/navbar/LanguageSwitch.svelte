@@ -19,6 +19,6 @@
 </script>
 
 <Switch on:languageChange={changeLanguage} {checked}>
-	<span slot="left-label">🇬🇧 </span>
-	<span slot="right-label"> 🇷🇴</span>
+	<span class="text-xl md:text-2xl mr-1" slot="left-label">🇬🇧</span>
+	<span class="text-xl md:text-2xl ml-1" slot="right-label">🇷🇴</span>
 </Switch>
