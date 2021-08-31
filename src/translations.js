@@ -190,12 +190,12 @@ export default {
 					},
 					job_description: {
 						en:
-							'Reprehenderit magna officia culpa aliquip officia culpa cupidatat ad fugiat reprehenderit.',
-						ro: 'Ullamco in occaecat dolor culpa officia quis.'
+							"At UnifiedPost, we are developing a rapidly growing SaaS, thats is handling all aspects of payments and invoices for a certain enterprise. As a Full Stack Developer, I've been responsible for developing various internal API and features, including UI/UX changes.",
+						ro: "La UnifiedPost, dezvoltăm un SaaS în creștere rapidă, care gestionează toate aspectele legate de plăți și facturi pentru o anumită întreprindere. În calitate de dezvoltator Full Stack, am fost responsabil pentru dezvoltarea diferitelor API și caracteristici interne, inclusiv modificări UI / UX.",
 					},
 					used_technologies: {
-						en: 'Magna commodo deserunt laborum magna ea cupidatat dolor commodo anim ad.',
-						ro: 'Et ad et et culpa cupidatat in Lorem in voluptate sit dolore anim amet.'
+						en: 'Ruby, Rails, Angular, TypeScript',
+						ro: 'Ruby, Rails, Angular, TypeScript'
 					}
 				}
 			]
