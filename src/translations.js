@@ -33,6 +33,21 @@ export default {
 				en: 'Powered by ☕',
 				ro: 'Cu ajutorul ☕'
 			}
+		},
+		labels: {
+			inDevelopment: {
+				en: "In development",
+				ro: "În dezvoltare"
+			},
+			maintenance: {
+				en: "In maintanance",
+				ro: "În menținere"
+			},
+			lts: "LTS",
+			completed: {
+				en: "Completed",
+				ro: "Complet"
+			}
 		}
 	},
 	pages: {
