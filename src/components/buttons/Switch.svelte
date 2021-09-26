@@ -2,8 +2,6 @@
 	import { createEventDispatcher } from 'svelte';
 	export let checked = false;
 
-	let bgGreen = 'dark:bg-green-500';
-
 	const dispatch = createEventDispatcher();
 
 	function clickSwitch() {
