@@ -14,8 +14,8 @@
 
 {#each projects.project as project}
 	<br />
-	<div class="flex">
-		<h1 class="mb-4 text-purple-600 text-2xl dark:text-purple-300 uppercase">
+	<div class="md:flex md:gap-x-4 md:mb-4">
+		<h1 class="text-purple-600 text-2xl dark:text-purple-300 uppercase">
 			{project.title[$language]}
 		</h1>
 		<StatusLabel status={project.status}></StatusLabel>

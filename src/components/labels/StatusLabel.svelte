@@ -1,11 +1,8 @@
 <script>
-	import translations from '../../translations';
 	import { language } from '../../stores';
-    export let status;
+	export let status;
 
-    let labelText = translations.components.labels
+	let completedColor = 'border-red-200 bg-red-700 bg-opacity-70 text-red-200';
 </script>
 
-<div class="">
-    <span>{status[$language]}</span>
-</div>
+<span class="border-2 rounded-full px-4">{status[$language]}</span>
