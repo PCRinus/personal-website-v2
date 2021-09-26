@@ -3,6 +3,7 @@
 	import { language } from '../stores';
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 	import SecondaryButton from '../components/buttons/SecondaryButton.svelte';
+	import StatusLabel from '../components/labels/StatusLabel.svelte';
 
 	let projects = translations.pages.projects;
 </script>
@@ -13,9 +14,12 @@
 
 {#each projects.project as project}
 	<br />
-	<h1 class="mb-4 text-purple-600 text-2xl dark:text-purple-300 uppercase">
-		{project.title[$language]}
-	</h1>
+	<div class="flex">
+		<h1 class="mb-4 text-purple-600 text-2xl dark:text-purple-300 uppercase">
+			{project.title[$language]}
+		</h1>
+		<StatusLabel status={project.status}></StatusLabel>
+	</div>
 	<h1>📖 {project.description[$language]}</h1>
 	<h1>🖥️ {project.used_technologies[$language]}</h1>
 	<PrimaryButton>

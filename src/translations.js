@@ -33,21 +33,6 @@ export default {
 				en: 'Powered by ☕',
 				ro: 'Cu ajutorul ☕'
 			}
-		},
-		labels: {
-			inDevelopment: {
-				en: "In development",
-				ro: "În dezvoltare"
-			},
-			maintenance: {
-				en: "In maintanance",
-				ro: "În menținere"
-			},
-			lts: "LTS",
-			completed: {
-				en: "Completed",
-				ro: "Complet"
-			}
 		}
 	},
 	pages: {
@@ -206,7 +191,8 @@ export default {
 					job_description: {
 						en:
 							"At UnifiedPost, we are developing a rapidly growing SaaS, thats is handling all aspects of payments and invoices for a certain enterprise. As a Full Stack Developer, I've been responsible for developing various internal API and features, including UI/UX changes.",
-						ro: "La UnifiedPost, dezvoltăm un SaaS în creștere rapidă, care gestionează toate aspectele legate de plăți și facturi pentru o anumită întreprindere. În calitate de dezvoltator Full Stack, am fost responsabil pentru dezvoltarea diferitelor API și caracteristici interne, inclusiv modificări UI / UX.",
+						ro:
+							'La UnifiedPost, dezvoltăm un SaaS în creștere rapidă, care gestionează toate aspectele legate de plăți și facturi pentru o anumită întreprindere. În calitate de dezvoltator Full Stack, am fost responsabil pentru dezvoltarea diferitelor API și caracteristici interne, inclusiv modificări UI / UX.'
 					},
 					used_technologies: {
 						en: 'Ruby, Rails, Angular, TypeScript',
@@ -236,6 +222,10 @@ export default {
 						en: 'Svelte, NodeJS, Express, MongoDB, Puppetter, Heroku, BulmaCSS',
 						ro: 'Svelte, NodeJS, Express, MongoDB, Puppetter, Heroku, BulmaCSS'
 					},
+					status: {
+						en: 'Completed',
+						ro: 'Complet'
+					},
 					github_link: 'https://github.com/PCRinus/educativ-io',
 					website_link: 'https://educativ-io.herokuapp.com/'
 				},
@@ -253,6 +243,10 @@ export default {
 					used_technologies: {
 						en: 'HTML, CSS(Bootstrap 4), JavaScript(jQuery), Netlify',
 						ro: 'HTML, CSS(Bootstrap 4), JavaScript(jQuery), Netlify'
+					},
+					status: {
+						en: 'Completed',
+						ro: 'Complet'
 					},
 					github_link: 'https://github.com/PCRinus/PersonalWebsite',
 					website_link: 'https://www.mirceacasapu.com/'
@@ -272,8 +266,56 @@ export default {
 						en: 'Svelte(SvelteKit), Tailwind CSS, Netlify',
 						ro: 'Svelte(SvelteKit), Tailwind CSS, Netlify'
 					},
+					status: {
+						en: 'In maintanance',
+						ro: 'In mentenanta'
+					},
 					github_link: 'https://github.com/PCRinus/personal-webiste-V2',
-					website_link: 'no link available yet'
+					website_link: 'https://mirceacasapu.com/'
+				},
+				{
+					title: {
+						en: 'GW2 Discord Bot',
+						ro: 'GW2 Discord Bot'
+					},
+					description: {
+						en:
+							'You are looking at it right now. It was made to be easier to expand with new content, and to learn new technologies. It will also be a sandbox for new ideas.',
+						ro:
+							'Te uiți la acest proiect chiar acum. A fost făcut să fie mai ușor să fie extins cu conținut nou și să învaț noi tehnologii. De asemenea, va fii un nou loc de joaca pentru a testa noi idei.'
+					},
+					used_technologies: {
+						en: 'Svelte(SvelteKit), Tailwind CSS, Netlify',
+						ro: 'Svelte(SvelteKit), Tailwind CSS, Netlify'
+					},
+					status: {
+						en: 'In development',
+						ro: 'In dezvoltare'
+					},
+					github_link: 'https://github.com/PCRinus/GW2-discord-bot',
+					website_link: ''
+				},
+				{
+					title: {
+						en: 'Covid Certificate Generator',
+						ro: 'Generator de adeverinţe de Covid'
+					},
+					description: {
+						en:
+							'This is an app that generates COVID certificates, for being able to travel outside, during restrictions in Romania. It takes user input, and outputs a PDF with all of the necessary data.',
+						ro:
+							'Aceasta este o aplicație care generează certificate COVID, pentru a putea călători în afara, în timpul restricțiilor din România. Este nevoie de intrarea utilizatorului și de a transmite un PDF cu toate datele necesare.'
+					},
+					used_technologies: {
+						en: 'Ruby, Rails, Angular, Heroku',
+						ro: 'Ruby, Rails, Angular, Heroku'
+					},
+					status: {
+						en: 'In development',
+						ro: 'In dezvoltare'
+					},
+					github_link: 'https://github.com/PCRinus/adeverinte-covid',
+					website_link: ''
 				}
 			]
 		},
@@ -298,20 +340,20 @@ export default {
 		},
 		form_success: {
 			header: {
-				en: "Form submitted",
-				ro: "Formularul a fost trimis"
+				en: 'Form submitted',
+				ro: 'Formularul a fost trimis'
 			},
 			thanks: {
-				en: "Thank you for sending me a message",
-				ro: "Mulțumesc că mi-ai trimis un mesaj"
+				en: 'Thank you for sending me a message',
+				ro: 'Mulțumesc că mi-ai trimis un mesaj'
 			},
 			subheader: {
-				en: "I will get back to you as soon as possible.",
-				ro: "Iți voi răspunde cât mai repede posibil."
+				en: 'I will get back to you as soon as possible.',
+				ro: 'Iți voi răspunde cât mai repede posibil.'
 			},
 			reach_out: {
-				en: "Reach out on LinkedIn as well",
-				ro: "Contaceaza-mă și pe LinkedIn"
+				en: 'Reach out on LinkedIn as well',
+				ro: 'Contaceaza-mă și pe LinkedIn'
 			}
 		},
 		error: {
