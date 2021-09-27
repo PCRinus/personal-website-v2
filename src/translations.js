@@ -280,13 +280,13 @@ export default {
 					},
 					description: {
 						en:
-							'You are looking at it right now. It was made to be easier to expand with new content, and to learn new technologies. It will also be a sandbox for new ideas.',
+							'A Discord bot that connects to the Guild Wars 2 API, using a user generated API key, that can show a player relevant data, including stats about achievements, inventory, and current quests.',
 						ro:
-							'Te uiți la acest proiect chiar acum. A fost făcut să fie mai ușor să fie extins cu conținut nou și să învaț noi tehnologii. De asemenea, va fii un nou loc de joaca pentru a testa noi idei.'
+							'Un bot pentru Discord care se conectează la API-ul Guild Wars 2, folosind o cheie de API generata de utilizator, pentru a arăta unui jucător date relevante, inclusiv statistici despre trofee, inventar și misiuni curente.'
 					},
 					used_technologies: {
-						en: 'Svelte(SvelteKit), Tailwind CSS, Netlify',
-						ro: 'Svelte(SvelteKit), Tailwind CSS, Netlify'
+						en: 'JavaScript, DiscordJS',
+						ro: 'JavaScript, DiscordJS'
 					},
 					status: {
 						en: 'In development',

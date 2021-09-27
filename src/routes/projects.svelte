@@ -18,15 +18,17 @@
 		<h1 class="text-purple-600 text-2xl dark:text-purple-300 uppercase">
 			{project.title[$language]}
 		</h1>
-		<StatusLabel status={project.status}></StatusLabel>
+		<StatusLabel status={project.status} />
 	</div>
 	<h1>📖 {project.description[$language]}</h1>
 	<h1>🖥️ {project.used_technologies[$language]}</h1>
 	<PrimaryButton>
 		<a class="mx-auto" href={project.github_link} target="_blank">🔗 GitHub</a>
 	</PrimaryButton>
-	<SecondaryButton>
-		<a class="mx-auto" href={project.website_link} target="_blank">🌐 Webiste</a>
-	</SecondaryButton>
+	{#if project.website_link}
+		<SecondaryButton>
+			<a class="mx-auto" href={project.website_link} target="_blank">🌐 Webiste</a>
+		</SecondaryButton>
+	{/if}
 	<br />
 {/each}
