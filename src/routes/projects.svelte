@@ -3,6 +3,7 @@
 	import { language } from '../stores';
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 	import SecondaryButton from '../components/buttons/SecondaryButton.svelte';
+	import StatusLabel from '../components/labels/StatusLabel.svelte';
 
 	let projects = translations.pages.projects;
 </script>
@@ -13,16 +14,21 @@
 
 {#each projects.project as project}
 	<br />
-	<h1 class="mb-4 text-purple-600 text-2xl dark:text-purple-300 uppercase">
-		{project.title[$language]}
-	</h1>
+	<div class="md:flex md:gap-x-4 md:mb-4">
+		<h1 class="text-purple-600 text-2xl dark:text-purple-300 uppercase">
+			{project.title[$language]}
+		</h1>
+		<StatusLabel status={project.status} />
+	</div>
 	<h1>📖 {project.description[$language]}</h1>
 	<h1>🖥️ {project.used_technologies[$language]}</h1>
 	<PrimaryButton>
 		<a class="mx-auto" href={project.github_link} target="_blank">🔗 GitHub</a>
 	</PrimaryButton>
-	<SecondaryButton>
-		<a class="mx-auto" href={project.website_link} target="_blank">🌐 Webiste</a>
-	</SecondaryButton>
+	{#if project.website_link}
+		<SecondaryButton>
+			<a class="mx-auto" href={project.website_link} target="_blank">🌐 Webiste</a>
+		</SecondaryButton>
+	{/if}
 	<br />
 {/each}

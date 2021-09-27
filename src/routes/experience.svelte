@@ -3,10 +3,8 @@
 	import { language } from '../stores';
 
 	let headers = translations.pages.experiences;
-	let educations = translations.pages.experiences.education_experience;
 	let jobs = translations.pages.experiences.job_experience;
 
-	let sectionToggle = true;
 </script>
 
 <div>
