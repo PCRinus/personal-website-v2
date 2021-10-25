@@ -13,7 +13,6 @@
 	let selectedColor;
 
 	onMount(async () => {
-		console.log(status[$language]);
 		selectedColor = setColor(status[$language]);
 	});
 
