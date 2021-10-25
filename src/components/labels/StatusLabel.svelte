@@ -13,16 +13,20 @@
 	let selectedColor;
 
 	onMount(async () => {
+		console.log(status[$language]);
 		selectedColor = setColor(status[$language]);
 	});
 
 	function setColor(status) {
 		switch (status) {
 			case 'Completed':
+			case 'Complet':
 				return completedColor;
 			case 'In development':
+			case 'In dezvoltare':
 				return devColor;
 			case 'In maintanance':
+			case 'In mentenanta':
 				return maintananceColor;
 			default:
 				return defaultColor;
