@@ -2,6 +2,8 @@
 	import translations from '../translations';
 	import { language } from '../stores';
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
+	import List from '../components/List.svelte';
+	import { attribute_to_object } from 'svelte/internal';
 
 	let t = translations.pages.index;
 </script>
@@ -42,41 +44,16 @@
 	<p>{@html t.about_me.background[$language]}</p>
 
 	<div class="mt-2 flex flex-row flex-wrap justify-between">
-		<div class="mt-2">
-			<h2
-				class="lg:text-2xl my-2 uppercase font-semibold subpixel-antialiased text-pink-600 dark:text-green-500"
-			>
-				{t.about_me.languages_header[$language]}
-			</h2>
-			<ul class="pl-4">
-				{#each t.about_me.skills.languages as languages}
-					<li>{languages}</li>
-				{/each}
-			</ul>
-		</div>
-		<div class="mx-4 mt-2">
-			<h2
-				class="lg:text-2xl my-2 uppercase font-semibold subpixel-antialiased text-pink-600 dark:text-green-500"
-			>
-				{t.about_me.frameworks_header[$language]}
-			</h2>
-			<ul class="pl-4">
-				{#each t.about_me.skills.frameworks as frameworks}
-					<li>{frameworks}</li>
-				{/each}
-			</ul>
-		</div>
-		<div class="mt-2">
-			<h2
-				class="lg:text-2xl my-2 uppercase font-semibold subpixel-antialiased text-pink-600 dark:text-green-500"
-			>
-				{t.about_me.tools_header[$language]}
-			</h2>
-			<ul class="pl-4">
-				{#each t.about_me.skills.tools as tools}
-					<li>{tools}</li>
-				{/each}
-			</ul>
-		</div>
+		<List
+			listHeader={t.about_me.languages_header[$language]}
+			listItems={t.about_me.skills.languages}
+		/>
+
+		<List
+			listHeader={t.about_me.frameworks_header[$language]}
+			listItems={t.about_me.skills.frameworks}
+		/>
+
+		<List listHeader={t.about_me.tools_header[$language]} listItems={t.about_me.skills.tools} />
 	</div>
 </div>
