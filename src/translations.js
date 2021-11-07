@@ -25,9 +25,9 @@ export default {
 		footer: {
 			text: {
 				en:
-					'Designed and developed by <strong class="text-pink-700 dark:text-green-500">Mircea Casapu</strong> © 2021',
+					'Designed and developed by <strong class="text-pink-700 dark:text-green-500"> </br> Mircea Casapu</strong> © 2021',
 				ro:
-					'Proiectat si dezvoltat de <strong class="text-pink-700 dark:text-green-500">Mircea Casapu</strong> © 2021'
+					'Proiectat si dezvoltat de <strong class="text-pink-700 dark:text-green-500"> </br> Mircea Casapu</strong> © 2021'
 			},
 			coffee: {
 				en: 'Powered by ☕',

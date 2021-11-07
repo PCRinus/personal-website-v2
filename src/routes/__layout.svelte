@@ -3,11 +3,12 @@
 	import Footer from '../components/Footer.svelte';
 	import { onMount } from 'svelte';
 	import * as Cookies from '../cookies';
-	import { language, theme } from '../stores';
+	import { language, theme, upperContentHeight } from '../stores';
 	import Swoosh from '../icons/Swoosh.svelte';
 	import { page } from '$app/stores';
 
 	onMount(async () => {
+    $upperContentHeight = document.getElementsByClassName('upper-content')[0].clientHeight;
 		let currentTheme = await Cookies.getCookie('theme');
 		let currentLanguage = await Cookies.getCookie('language');
 
@@ -33,13 +34,17 @@
 	<title>Mircea Casapu - Full Stack Web Developer</title>
 </svelte:head>
 
-<div class="lg:text-2xl">
-	<Navbar segment={$page.path} />
-	<Swoosh themeChange={$theme} color={$theme === 'light' ? 'AFD3D5' : '5A5D72'} />
-	<div class="content p-8 max-w-5xl mx-auto -my-12 md:-my-0">
-		<slot />
+<div class="content lg:text-2xl" style="--uper-content-height: {`${$upperContentHeight}px`}">
+	<div class="upper-content">
+		<Navbar segment={$page.path} />
+		<Swoosh themeChange={$theme} color={$theme === 'light' ? 'AFD3D5' : '5A5D72'} />
 	</div>
-	<Footer />
+	<div class="lower-content">
+		<div class="inner-content p-8 max-w-5xl mx-auto -my-12 md:-my-0">
+			<slot />
+		</div>
+		<Footer />
+	</div>
 </div>
 
 <style>
@@ -47,10 +52,31 @@
 	@tailwind components;
 	@tailwind utilities;
 
+	:global(html, body) {
+		height: 100%;
+	}
 	:global(body) {
 		background-color: white;
 		color: black;
 		transition: background-color 0.3s;
+		display: flex;
+		flex-direction: column;
+	}
+
+	:global(#svelte, .content) {
+		height: 100%;
+	}
+	:global(.lower-content) {
+		height: calc(100% - var(--uper-content-height));
+		display: flex;
+		flex-direction: column;
+	}
+
+	:global(.inner-content) {
+		flex: 1 0 auto;
+	}
+	:global(.footer) {
+		flex-shrink: 0;
 	}
 	:global(body.dark) {
 		@apply bg-jet-dark;
