@@ -3,7 +3,6 @@
 	import { language } from '../stores';
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 	import List from '../components/List.svelte';
-	import { attribute_to_object } from 'svelte/internal';
 
 	let t = translations.pages.index;
 </script>
@@ -13,20 +12,24 @@
 		{t.hero_greeting[$language]}
 		<span>👋🏼</span>
 	</h1>
+
 	<h2 class="subpixel-antialiased">
 		{@html t.hero_subgreeting[$language]}
 	</h2>
+
 	<PrimaryButton
 		><a
 			href="https://drive.google.com/file/d/19wP-B6hlkH9jehZlzqd8habHch8mhC8G/view?usp=sharing"
 			target="_blank">📝 {t.cv[$language]}</a
 		></PrimaryButton
 	>
+
 	<PrimaryButton
 		text_color={'text-white hover:text-gray-100'}
 		bg_color={'bg-github hover:bg-github-dark'}
 		><a href="https://github.com/PCRinus" target="_blank">{t.github[$language]}</a></PrimaryButton
 	>
+
 	<PrimaryButton
 		text_color={'text-white hover:text-gray-100'}
 		bg_color={'bg-linkedin hover:bg-linkedin-dark'}
