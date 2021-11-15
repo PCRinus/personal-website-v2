@@ -19,7 +19,7 @@
 
 	<PrimaryButton
 		><a
-			href="https://drive.google.com/file/d/19wP-B6hlkH9jehZlzqd8habHch8mhC8G/view?usp=sharing"
+			href="https://drive.google.com/file/d/1_6x2gZaouzkefqzgZpYD5uYgRW_22jik/view?usp=sharing"
 			target="_blank">📝 {t.cv[$language]}</a
 		></PrimaryButton
 	>
