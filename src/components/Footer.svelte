@@ -6,7 +6,7 @@
 </script>
 
 <footer class="footer">
-	<div class="max-w-5xl mx-auto p-8">
+	<div class="max-w-5xl mx-auto px-8 pt-8 md:pt-0">
 		<hr />
 		<div class="flex justify-between">
 			<div class="max-w-sm my-4">

@@ -1,3 +1,21 @@
+import JsIcon from './images/techs/JsIcon.svelte';
+import PhpIcon from './images/techs/PhpIcon.svelte';
+import HtmlIcon from './images/techs/HtmlIcon.svelte';
+import CssIcon from './images/techs/CssIcon.svelte';
+import CSharpIcon from './images/techs/CSharpIcon.svelte';
+
+import SvelteIcon from './images/techs/SvelteIcon.svelte';
+import AngularIcon from './images/techs/AngularIcon.svelte';
+import ReactIcon from './images/techs/ReactIcon.svelte';
+import NodeIcon from './images/techs/NodeIcon.svelte';
+import DotNetIcon from './images/techs/DotNetIcon.svelte';
+
+import VsCodeIcon from './images/techs/VsCodeIcon.svelte';
+import GitIcon from './images/techs/GitIcon.svelte';
+import NetlifyIcon from './images/techs/NetlifyIcon.svelte';
+import HerokuIcon from './images/techs/HerokuIcon.svelte';
+import PostmanIcon from './images/techs/PostmanIcon.svelte';
+
 export default {
 	components: {
 		navbar: {
@@ -59,9 +77,30 @@ export default {
 						'În prezent sunt un Full Stack Dev <strong><a href="https://www.unifiedpost.com/en" target="_blank">@UnifiedPost</a></strong>, construind diverse unelte pentru web. Recent am absolvit Universitatea Politehnică din Timișoara | UPT cu o Diploma de Licență în Inginerie'
 				},
 				skills: {
-					languages: ['JavaScript', 'PHP', 'HTML', 'CSS/Sass', 'C#', 'SQL'],
-					frameworks: ['Svelte & SvelteKit', 'React', 'NodeJS', '.NET'],
-					tools: ['VS Code', 'Git & GitHub', 'Netlify', 'Heroku', 'Postman', 'Jira']
+					// languages: ['JavaScript', 'PHP', 'HTML', 'CSS/Sass', 'C#', 'SQL'],
+					// frameworks: ['Svelte & SvelteKit', 'React', 'NodeJS', '.NET'],
+					// tools: ['VS Code', 'Git & GitHub', 'Netlify', 'Heroku', 'Postman']
+					languages: [
+						{ item: 'JavaScript', icon: JsIcon },
+						{ item: 'PHP', icon: PhpIcon },
+						{ item: 'HTML', icon: HtmlIcon },
+						{ item: 'CSS', icon: CssIcon },
+						{ item: 'C#', icon: CSharpIcon }
+					],
+					frameworks: [
+						{ item: 'Svelte', icon: SvelteIcon },
+						{ item: 'Angular', icon: AngularIcon },
+						{ item: 'React', icon: ReactIcon },
+						{ item: 'NodeJS', icon: NodeIcon },
+						{ item: '.NET', icon: DotNetIcon }
+					],
+					tools: [
+						{ item: 'VS Code', icon: VsCodeIcon },
+						{ item: 'Git', icon: GitIcon },
+						{ item: 'Netlify', icon: NetlifyIcon },
+						{ item: 'Heroku', icon: HerokuIcon },
+						// { item: 'Postman', icon: PostmanIcon }
+					]
 				},
 				languages_header: {
 					en: 'Languages',
@@ -72,7 +111,7 @@ export default {
 					ro: 'Framework-uri'
 				},
 				tools_header: {
-					en: 'Tools',
+					en: 'Dev Tools',
 					ro: 'Unelte'
 				}
 			},
