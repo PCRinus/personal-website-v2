@@ -23,7 +23,10 @@
 	<h1>📖 {project.description[$language]}</h1>
 	<h1>🖥️ {project.used_technologies[$language]}</h1>
 	<PrimaryButton>
-		<a class="mx-auto" href={project.github_link} target="_blank">🔗 GitHub</a>
+		<span slot="icon">🔗</span>
+		<span slot="text">
+			<a class="mx-auto" href={project.github_link} target="_blank">GitHub</a>
+		</span>
 	</PrimaryButton>
 	{#if project.website_link}
 		<SecondaryButton>

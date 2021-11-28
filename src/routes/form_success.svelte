@@ -23,12 +23,14 @@
 			{succesMessage.thanks[$language]}
 		</h1>
 		<h1>{succesMessage.subheader[$language]}</h1>
-		<PrimaryButton bg_color={'bg-linkedin'}
-			><a href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
-				<div class="flex items-center gap-x-2">
-					{succesMessage.reach_out[$language]}
-				</div>
-			</a>
+		<PrimaryButton bg_color={'bg-linkedin'}>
+			<span slot="text">
+				<a href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
+					<div class="flex items-center gap-x-2">
+						{succesMessage.reach_out[$language]}
+					</div>
+				</a>
+			</span>
 		</PrimaryButton>
 	</div>
 </div>

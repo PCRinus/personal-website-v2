@@ -1,6 +1,7 @@
 <script context="module">
 	export const prerender = true;
 
+	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 	import translations from '../translations';
 	import { language } from '../stores';
 
@@ -42,11 +43,12 @@
 			>
 		</p>
 		<p>
-			<button
-				type="submit"
-				class="w-auto h-auto my-4 px-4 py-2 text-white bg-purple-600 hover:bg-purple-700 hover:text-gray-100 rounded-sm disabled:opacity-50"
-				>✉️ {form.form_submit_button[$language]}</button
-			>
+			<PrimaryButton>
+				<span slot="icon">✉️</span>
+				<span slot="text">
+					{form.form_submit_button[$language]}
+				</span>
+			</PrimaryButton>
 		</p>
 	</div>
 </form>
