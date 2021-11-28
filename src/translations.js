@@ -1,20 +1,20 @@
-import JsIcon from './images/techs/JsIcon.svelte';
-import PhpIcon from './images/techs/PhpIcon.svelte';
-import HtmlIcon from './images/techs/HtmlIcon.svelte';
-import CssIcon from './images/techs/CssIcon.svelte';
-import CSharpIcon from './images/techs/CSharpIcon.svelte';
+import JsIcon from './images/icons/JsIcon.svelte';
+import PhpIcon from './images/icons/PhpIcon.svelte';
+import HtmlIcon from './images/icons/HtmlIcon.svelte';
+import CssIcon from './images/icons/CssIcon.svelte';
+import CSharpIcon from './images/icons/CSharpIcon.svelte';
 
-import SvelteIcon from './images/techs/SvelteIcon.svelte';
-import AngularIcon from './images/techs/AngularIcon.svelte';
-import ReactIcon from './images/techs/ReactIcon.svelte';
-import NodeIcon from './images/techs/NodeIcon.svelte';
-import DotNetIcon from './images/techs/DotNetIcon.svelte';
+import SvelteIcon from './images/icons/SvelteIcon.svelte';
+import AngularIcon from './images/icons/AngularIcon.svelte';
+import ReactIcon from './images/icons/ReactIcon.svelte';
+import NodeIcon from './images/icons/NodeIcon.svelte';
+import DotNetIcon from './images/icons/DotNetIcon.svelte';
 
-import VsCodeIcon from './images/techs/VsCodeIcon.svelte';
-import GitIcon from './images/techs/GitIcon.svelte';
-import NetlifyIcon from './images/techs/NetlifyIcon.svelte';
-import HerokuIcon from './images/techs/HerokuIcon.svelte';
-import PostmanIcon from './images/techs/PostmanIcon.svelte';
+import VsCodeIcon from './images/icons/VsCodeIcon.svelte';
+import GitIcon from './images/icons/GitIcon.svelte';
+import NetlifyIcon from './images/icons/NetlifyIcon.svelte';
+import HerokuIcon from './images/icons/HerokuIcon.svelte';
+import PostmanIcon from './images/icons/PostmanIcon.svelte';
 
 export default {
 	components: {
