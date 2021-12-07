@@ -3,6 +3,7 @@
 	import FormSubmitted from '../images/FormSubmitted.svelte';
 	import { language, theme } from '../stores';
 	import translations from '../translations';
+	import Icon from '@iconify/svelte';
 
 	const succesMessage = translations.pages.form_success;
 </script>
@@ -24,11 +25,12 @@
 		</h1>
 		<h1>{succesMessage.subheader[$language]}</h1>
 		<PrimaryButton bg_color={'bg-linkedin'}>
+			<span slot="icon">
+				<Icon icon="bi:linkedin" />
+			</span>
 			<span slot="text">
-				<a href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
-					<div class="flex items-center gap-x-2">
-						{succesMessage.reach_out[$language]}
-					</div>
+				<a class="ml-2" href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
+					{succesMessage.reach_out[$language]}
 				</a>
 			</span>
 		</PrimaryButton>

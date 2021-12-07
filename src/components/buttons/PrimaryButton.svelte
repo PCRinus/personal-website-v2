@@ -15,6 +15,8 @@
 	class="w-auto h-auto mt-4 px-4 py-2 {text_color} {bg_color} rounded-sm disabled:opacity-50 {disabled}"
 	on:click={click}
 >
-	<slot name="icon" />
-	<slot name="text" />
+	<div class="flex items-center">
+		<slot name="icon" />
+		<slot name="text" />
+	</div>
 </button>
