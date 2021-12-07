@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 	import * as Cookies from '../cookies';
 	import { language, theme, upperContentHeight } from '../stores';
-	import Swoosh from '../icons/Swoosh.svelte';
+	import Swoosh from '../images/icons/Swoosh.svelte';
 	import { page } from '$app/stores';
 
 	onMount(async () => {
