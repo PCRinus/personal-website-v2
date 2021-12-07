@@ -20,10 +20,11 @@
 
 	<PrimaryButton>
 		<span slot="icon">
-			<Icon icon="fe:document" />
+			<Icon icon="twemoji:memo" />
 		</span>
 		<span slot="text">
 			<a
+      class="ml-2"
 				href="https://drive.google.com/file/d/1_6x2gZaouzkefqzgZpYD5uYgRW_22jik/view?usp=sharing"
 				target="_blank">{t.cv[$language]}</a
 			>
