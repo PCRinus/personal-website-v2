@@ -18,45 +18,43 @@
 		{@html t.hero_subgreeting[$language]}
 	</h2>
 
-	<div class="">
-		<PrimaryButton>
-			<span slot="icon">
-				<Icon icon="fe:document"/>
-			</span>
-			<span slot="text">
-				<a
-					href="https://drive.google.com/file/d/1_6x2gZaouzkefqzgZpYD5uYgRW_22jik/view?usp=sharing"
-					target="_blank">{t.cv[$language]}</a
-				>
-			</span>
-		</PrimaryButton>
+	<PrimaryButton>
+		<span slot="icon">
+			<Icon icon="fe:document" />
+		</span>
+		<span slot="text">
+			<a
+				href="https://drive.google.com/file/d/1_6x2gZaouzkefqzgZpYD5uYgRW_22jik/view?usp=sharing"
+				target="_blank">{t.cv[$language]}</a
+			>
+		</span>
+	</PrimaryButton>
 
-		<PrimaryButton
-			text_color={'text-white hover:text-gray-100'}
-			bg_color={'bg-github hover:bg-github-dark'}
-		>
-			<span slot="icon">
-				<Icon icon="bi:github" />
-			</span>
-			<span slot="text">
-				<a class="ml-2" href="https://github.com/PCRinus" target="_blank">{t.github[$language]}</a>
-			</span>
-		</PrimaryButton>
+	<PrimaryButton
+		text_color={'text-white hover:text-gray-100'}
+		bg_color={'bg-github hover:bg-github-dark'}
+	>
+		<span slot="icon">
+			<Icon icon="bi:github" />
+		</span>
+		<span slot="text">
+			<a class="ml-2" href="https://github.com/PCRinus" target="_blank">{t.github[$language]}</a>
+		</span>
+	</PrimaryButton>
 
-		<PrimaryButton
-			text_color={'text-white hover:text-gray-100'}
-			bg_color={'bg-linkedin hover:bg-linkedin-dark'}
-		>
-			<span slot="icon">
-				<Icon icon="bi:linkedin" />
-			</span>
-			<span slot="text">
-				<a class="ml-2" href="https://www.linkedin.com/in/mircea-casapu/" target="_blank"
-					>{t.linkedin[$language]}</a
-				>
-			</span>
-		</PrimaryButton>
-	</div>
+	<PrimaryButton
+		text_color={'text-white hover:text-gray-100'}
+		bg_color={'bg-linkedin hover:bg-linkedin-dark'}
+	>
+		<span slot="icon">
+			<Icon icon="bi:linkedin" />
+		</span>
+		<span slot="text">
+			<a class="ml-2" href="https://www.linkedin.com/in/mircea-casapu/" target="_blank"
+				>{t.linkedin[$language]}</a
+			>
+		</span>
+	</PrimaryButton>
 </div>
 
 <hr class="text-pink-600 dark:text-green-500" />
