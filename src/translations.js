@@ -1,21 +1,3 @@
-import JsIcon from './images/icons/JsIcon.svelte';
-import PhpIcon from './images/icons/PhpIcon.svelte';
-import HtmlIcon from './images/icons/HtmlIcon.svelte';
-import CssIcon from './images/icons/CssIcon.svelte';
-import CSharpIcon from './images/icons/CSharpIcon.svelte';
-
-import SvelteIcon from './images/icons/SvelteIcon.svelte';
-import AngularIcon from './images/icons/AngularIcon.svelte';
-import ReactIcon from './images/icons/ReactIcon.svelte';
-import NodeIcon from './images/icons/NodeIcon.svelte';
-import DotNetIcon from './images/icons/DotNetIcon.svelte';
-
-import VsCodeIcon from './images/icons/VsCodeIcon.svelte';
-import GitIcon from './images/icons/GitIcon.svelte';
-import NetlifyIcon from './images/icons/NetlifyIcon.svelte';
-import HerokuIcon from './images/icons/HerokuIcon.svelte';
-import PostmanIcon from './images/icons/PostmanIcon.svelte';
-
 export default {
 	components: {
 		navbar: {
@@ -77,28 +59,25 @@ export default {
 						'În prezent sunt un Full Stack Dev <strong><a href="https://www.unifiedpost.com/en" class="text-pink-600 dark:text-green-500 font-semibold no-underline hover:underline" target="_blank">@UnifiedPost</a></strong>, construind diverse aplicații web. Recent am absolvit Universitatea Politehnică din Timișoara | UPT cu o Diploma de Licență în Inginerie.'
 				},
 				skills: {
-					// languages: ['JavaScript', 'PHP', 'HTML', 'CSS/Sass', 'C#', 'SQL'],
-					// frameworks: ['Svelte & SvelteKit', 'React', 'NodeJS', '.NET'],
-					// tools: ['VS Code', 'Git & GitHub', 'Netlify', 'Heroku', 'Postman']
 					languages: [
-						{ item: 'JavaScript', icon: JsIcon },
-						{ item: 'PHP', icon: PhpIcon },
-						{ item: 'HTML', icon: HtmlIcon },
-						{ item: 'CSS', icon: CssIcon },
-						{ item: 'C#', icon: CSharpIcon }
+						{ item: 'JavaScript', icon: "vscode-icons:file-type-js-official" },
+						{ item: 'PHP', icon: "vscode-icons:file-type-php" },
+						{ item: 'HTML', icon: "vscode-icons:file-type-html" },
+						{ item: 'CSS', icon: "vscode-icons:file-type-css" },
+						{ item: 'C#', icon: "vscode-icons:file-type-csharp2" }
 					],
 					frameworks: [
-						{ item: 'Svelte', icon: SvelteIcon },
-						{ item: 'Angular', icon: AngularIcon },
-						{ item: 'React', icon: ReactIcon },
-						{ item: 'NodeJS', icon: NodeIcon },
-						{ item: '.NET', icon: DotNetIcon }
+						{ item: 'Svelte', icon: "vscode-icons:file-type-svelte" },
+						{ item: 'Angular', icon: "vscode-icons:file-type-angular" },
+						{ item: 'React', icon: "vscode-icons:file-type-reactjs" },
+						{ item: 'NodeJS', icon: "vscode-icons:file-type-node" },
+						{ item: '.NET', icon: "cib:dot-net" }
 					],
 					tools: [
-						{ item: 'VS Code', icon: VsCodeIcon },
-						{ item: 'Git', icon: GitIcon },
-						{ item: 'Netlify', icon: NetlifyIcon },
-						{ item: 'Heroku', icon: HerokuIcon },
+						{ item: 'VS Code', icon: "vscode-icons:file-type-vscode" },
+						{ item: 'Git', icon: "vscode-icons:file-type-git" },
+						{ item: 'Netlify', icon: "vscode-icons:file-type-netlify" },
+						{ item: 'Heroku', icon: "logos:heroku-icon" },
 						// { item: 'Postman', icon: PostmanIcon }
 					]
 				},
