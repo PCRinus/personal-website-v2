@@ -1,8 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-	mode: 'jit',
-	purge: ['./src/**/*.svelte'],
+	content: ['./src/**/*.svelte'],
 	darkMode: 'class',
 	plugins: [require('@tailwindcss/forms')],
 	theme: {
@@ -11,7 +10,7 @@ module.exports = {
 			current: 'currentColor',
 			black: colors.black,
 			white: colors.white,
-			gray: colors.trueGray,
+			gray: colors.neutral,
 			indigo: colors.indigo,
 			purple: colors.purple,
 			red: colors.rose,
