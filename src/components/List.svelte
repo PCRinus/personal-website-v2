@@ -1,4 +1,6 @@
 <script>
+  import Icon from '@iconify/svelte';
+
 	export let listHeader;
 	export let listItems;
 </script>
@@ -12,8 +14,8 @@
 	<ul class="py-2">
 		{#each listItems as item}
 			<li class="flex my-2">
-				<span class="h-8">
-					<svelte:component this={item.icon} />
+				<span class="h-8 self-center">
+					<Icon icon="{item.icon}" color="#512bd4" width="32" height="32"/>
 				</span>
 				<span class="ml-2 self-center">
 					{item.item}
