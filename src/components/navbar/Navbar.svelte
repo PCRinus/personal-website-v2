@@ -17,7 +17,7 @@
 </script>
 
 <nav class="pt-4 lg:pt-8 bg-cadetBlue-light dark:bg-jet-light">
-	<div class="max-w-5xl mx-auto px-4">
+	<div class="max-w-5xl mx-auto px-8">
 		<div class="flex justify-between">
 			<div class="flex items-center">
 				<div>
@@ -71,36 +71,36 @@
 	<!-- mobile menu -->
 	{#if visible}
 		<!-- content here -->
-		<div class="mobile-menu md:hidden" in:fly={{ y: -200, duration: 200 }}>
+		<div class="mobile-menu md:hidden px-8" in:fly={{ y: -200, duration: 200 }}>
 			<a
 				href="."
-				class="block text-xl px-4 py-4 -mb-2 {segment === '/'
+				class="block text-xl py-4 -mb-2 {segment === '/'
 					? 'text-pink-700 dark:text-green-500 font-semibold'
 					: 'text-black dark:text-white'}"
 				on:click={toggleMobileNav}>🧑🏻 {t.profile[$language]}</a
 			>
 			<a
 				href="experience"
-				class="block text-xl px-4 py-4 -my-2 {segment === '/experience'
+				class="block text-xl py-4 -my-2 {segment === '/experience'
 					? 'text-pink-700 dark:text-green-500 font-semibold'
 					: 'text-black dark:text-white'}"
 				on:click={toggleMobileNav}>🧑🏻‍💻 {t.experience[$language]}</a
 			>
 			<a
 				href="projects"
-				class="block text-xl px-4 py-4 -my-2 {segment === '/projects'
+				class="block text-xl py-4 -my-2 {segment === '/projects'
 					? 'text-pink-700 dark:text-green-500 font-semibold'
 					: 'text-black dark:text-white'}"
 				on:click={toggleMobileNav}>💻 {t.projects[$language]}</a
 			>
 			<a
 				href="contact"
-				class="block text-xl px-4 py-4 -my-2 {segment === '/contact'
+				class="block text-xl py-4 -my-2 {segment === '/contact'
 					? 'text-pink-700 dark:text-green-500 font-semibold'
 					: 'text-black dark:text-white'}"
 				on:click={toggleMobileNav}>✉️ {t.contact[$language]}</a
 			>
-			<div class="flex px-4 py-4 gap-x-4">
+			<div class="flex py-4 gap-x-4">
 				<ThemeSwitch />
 				<LanguageSwitch />
 			</div>
