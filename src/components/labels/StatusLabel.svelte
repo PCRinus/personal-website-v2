@@ -3,9 +3,9 @@
 	import { language } from '../../stores';
 	export let status;
 
-	let completedColor = 'border-cadetBlue bg-cadetBlue bg-opacity-20 text-cadetBlue';
-	let devColor = 'border-green-700 bg-green-700 bg-opacity-20 text-green-700';
-	let maintananceColor = 'border-pink-700 bg-pink-700 bg-opacity-20 text-pink-700';
+	let completedColor = 'border-cadetBlue dark:border-cadetBlue-light bg-cadetBlue bg-opacity-20 dark:bg-opacity-40 text-cadetBlue dark:text-cadetBlue-light';
+	let devColor = 'border-green-700 dark:border-green-500 bg-green-700 bg-opacity-20 dark:bg-opacity-50 text-green-700 dark:text-green-200';
+	let maintananceColor = 'border-pink-700 dark:border-pink-500 bg-pink-700 bg-opacity-20 dark:bg-opacity-50 text-pink-700 dark:text-pink-200';
 
 	//TODO: add default colors
 	let defaultColor = '';
