@@ -33,7 +33,7 @@
 			</PrimaryButton>
 			{#if project.website_link}
 				<SecondaryButton>
-					<a class="mx-auto" href={project.website_link} target="_blank">🌐 Webiste</a>
+					<a class="mx-auto" href={project.website_link} target="_blank">🌐 Website</a>
 				</SecondaryButton>
 			{/if}
 		</div>

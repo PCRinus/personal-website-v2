@@ -18,29 +18,32 @@
 		<!-- <input type="text" name="bot-field" /> -->
 		<p>
 			<label
-				>{form.form_label_name[$language]}<input
+				>{form.form_label_name[$language]}
+				<input
 					type="text"
 					name="name"
 					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
-				/></label
-			>
+				/>
+			</label>
 		</p>
 		<p>
 			<label
-				>{form.form_label_email}<input
+				>{form.form_label_email}
+				<input
 					type="email"
 					name="email"
 					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
-				/></label
-			>
+				/>
+			</label>
 		</p>
 		<p>
 			<label
-				>{form.form_label_message[$language]}<textarea
+				>{form.form_label_message[$language]}
+				<textarea
 					name="message"
 					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
-				/></label
-			>
+				/>
+			</label>
 		</p>
 		<p>
 			<PrimaryButton>

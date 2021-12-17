@@ -253,7 +253,7 @@ export default {
 				},
 				{
 					title: {
-						en: 'Personal Webiste V2',
+						en: 'Personal Website V2',
 						ro: 'Website Personal V2'
 					},
 					description: {
@@ -270,7 +270,7 @@ export default {
 						en: 'In maintanance',
 						ro: 'In mentenanta'
 					},
-					github_link: 'https://github.com/PCRinus/personal-webiste-V2',
+					github_link: 'https://github.com/PCRinus/personal-website-V2',
 					website_link: 'https://mirceacasapu.com/'
 				},
 				{
