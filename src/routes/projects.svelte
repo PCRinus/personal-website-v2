@@ -4,6 +4,7 @@
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
 	import SecondaryButton from '../components/buttons/SecondaryButton.svelte';
 	import StatusLabel from '../components/labels/StatusLabel.svelte';
+	import Card from '../components/card/Card.svelte';
 
 	let projects = translations.pages.projects;
 </script>
@@ -13,25 +14,28 @@
 </h1>
 
 {#each projects.project as project}
-	<br />
-	<div class="md:flex md:gap-x-4 md:mb-4">
-		<h1 class="text-purple-600 text-2xl dark:text-purple-300 uppercase">
-			{project.title[$language]}
-		</h1>
-		<StatusLabel status={project.status} />
-	</div>
-	<h1>📖 {project.description[$language]}</h1>
-	<h1>🖥️ {project.used_technologies[$language]}</h1>
-	<PrimaryButton>
-		<span slot="icon">🔗</span>
-		<span slot="text">
-			<a class="mx-auto" href={project.github_link} target="_blank">GitHub</a>
-		</span>
-	</PrimaryButton>
-	{#if project.website_link}
-		<SecondaryButton>
-			<a class="mx-auto" href={project.website_link} target="_blank">🌐 Webiste</a>
-		</SecondaryButton>
-	{/if}
-	<br />
+	<Card>
+		<div class="md:flex md:gap-x-4 md:mb-4" slot="title">
+			<h1 class="text-purple-600 text-2xl dark:text-purple-300 uppercase">
+				{project.title[$language]}
+			</h1>
+			<StatusLabel status={project.status} />
+		</div>
+
+		<h1 slot="description">📖 {project.description[$language]}</h1>
+		<h1 slot="tech-stack">🖥️ {project.used_technologies[$language]}</h1>
+		<div slot="button-group">
+			<PrimaryButton>
+				<span slot="icon">🔗</span>
+				<span slot="text">
+					<a class="mx-auto" href={project.github_link} target="_blank">GitHub</a>
+				</span>
+			</PrimaryButton>
+			{#if project.website_link}
+				<SecondaryButton>
+					<a class="mx-auto" href={project.website_link} target="_blank">🌐 Webiste</a>
+				</SecondaryButton>
+			{/if}
+		</div>
+	</Card>
 {/each}
