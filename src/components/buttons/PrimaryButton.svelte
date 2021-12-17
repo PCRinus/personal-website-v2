@@ -11,8 +11,8 @@
 	}
 </script>
 
-<button
-	class="w-auto h-auto mt-4 px-4 py-2 {text_color} {bg_color} rounded-sm disabled:opacity-50 {disabled}"
+<button {disabled}
+	class="w-auto h-auto mt-4 px-4 py-2 {text_color} {bg_color} rounded-sm disabled:opacity-50"
 	on:click={click}
 >
 	<div class="flex items-center">

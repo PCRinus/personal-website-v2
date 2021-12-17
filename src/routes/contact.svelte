@@ -1,4 +1,4 @@
-<script context="module">
+<script>
 	export const prerender = true;
 
 	import PrimaryButton from '../components/buttons/PrimaryButton.svelte';
@@ -6,6 +6,15 @@
 	import { language } from '../stores';
 
 	let form = translations.pages.contact;
+
+	let name;
+	let email;
+	let message;
+	let buttonState = 'disabled';
+
+	$: if (!!name && !!email && !!message === true) {
+		buttonState = '';
+	}
 </script>
 
 <h1 class="text-3xl lg:text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
@@ -16,42 +25,39 @@
 	<div class="flex flex-col my-4 max-w-lg">
 		<input type="hidden" name="form-name" value="contact" />
 		<!-- <input type="text" name="bot-field" /> -->
-		<p>
-			<label
-				>{form.form_label_name[$language]}
-				<input
-					type="text"
-					name="name"
-					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
-				/>
-			</label>
-		</p>
-		<p>
-			<label
-				>{form.form_label_email}
-				<input
-					type="email"
-					name="email"
-					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
-				/>
-			</label>
-		</p>
-		<p>
-			<label
-				>{form.form_label_message[$language]}
-				<textarea
-					name="message"
-					class="mt-1 lg:mt-3 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
-				/>
-			</label>
-		</p>
-		<p>
-			<PrimaryButton>
-				<span slot="icon">✉️</span>
+		<label
+			>{form.form_label_name[$language]}
+			<input
+				bind:value={name}
+				type="text"
+				name="name"
+				class="mt-1 lg:my-4 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
+			/>
+		</label>
+		<label
+			>{form.form_label_email}
+			<input
+				bind:value={email}
+				type="email"
+				name="email"
+				class="mt-1 lg:my-4 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
+			/>
+		</label>
+		<label
+			>{form.form_label_message[$language]}
+			<textarea
+				bind:value={message}
+				name="message"
+				class="mt-1 lg:my-4 block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white dark:bg-jet-light"
+			/>
+		</label>
+		<div>
+			<PrimaryButton disabled={buttonState}>
+				<span slot="icon">✉️ </span>
 				<span slot="text">
 					{form.form_submit_button[$language]}
 				</span>
 			</PrimaryButton>
-		</p>
+		</div>
 	</div>
 </form>
