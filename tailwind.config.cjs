@@ -17,6 +17,9 @@ module.exports = {
 			yellow: colors.amber,
 			pink: colors.pink,
 			green: colors.green,
+      slate: colors.slate,
+      zinc: colors.zinc,
+      stone: colors.stone,
 			cadetBlue: {
 				light: '#AFD3D5',
 				DEFAULT: '#62a8ac',

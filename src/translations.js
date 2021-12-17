@@ -54,9 +54,9 @@ export default {
 				},
 				background: {
 					en:
-						'I\'m currently a Full Stack Dev <strong><a href="https://www.unifiedpost.com/en" class="text-pink-600 dark:text-green-500 font-semibold no-underline hover:underline" target="_blank">@UnifiedPost</a></strong>, building tools for the web. I recently graduated from the Polytechnic University of Timișoara | UPT with a Bachelor\'s in Engineering.',
+						'I\'m currently a Full Stack Dev <strong><a href="https://www.unifiedpost.com/en" class="text-pink-600 dark:text-green-500 font-semibold hover:underline decoration-pink-600" target="_blank">@UnifiedPost</a></strong>, building tools for the web. I recently graduated from the Polytechnic University of Timișoara | UPT with a Bachelor\'s in Engineering.',
 					ro:
-						'În prezent sunt un Full Stack Dev <strong><a href="https://www.unifiedpost.com/en" class="text-pink-600 dark:text-green-500 font-semibold no-underline hover:underline" target="_blank">@UnifiedPost</a></strong>, construind diverse aplicații web. Recent am absolvit Universitatea Politehnică din Timișoara | UPT cu o Diploma de Licență în Inginerie.'
+						'În prezent sunt un Full Stack Dev <strong><a href="https://www.unifiedpost.com/en" class="text-pink-600 dark:text-green-500 font-semibold hover:underline decoration-pink-600" target="_blank">@UnifiedPost</a></strong>, construind diverse aplicații web. Recent am absolvit Universitatea Politehnică din Timișoara | UPT cu o Diploma de Licență în Inginerie.'
 				},
 				skills: {
 					languages: [
@@ -127,14 +127,8 @@ export default {
 						ro: 'Timișoara'
 					},
 					employment_period: {
-						start: {
-							en: '01-12-2019',
-							ro: '01-12-2019'
-						},
-						end: {
-							en: '15-09-2020',
-							ro: '15-09-2020'
-						}
+            en: '01-12-2019 - 15-09-2020',
+            ro: '01-12-2019 - 15-09-2020'
 					},
 					job_description: {
 						en:
@@ -161,14 +155,8 @@ export default {
 						ro: 'Timișoara'
 					},
 					employment_period: {
-						start: {
-							en: '15-09-2020',
-							ro: '15-09-2020'
-						},
-						end: {
-							en: '05-08-2021',
-							ro: '05-08-2021'
-						}
+            en: '15-09-2020 - 05-08-2021',
+            ro: '15-09-2020 - 05-08-2021'
 					},
 					job_description: {
 						en:
@@ -197,14 +185,8 @@ export default {
 						ro: 'Timișoara'
 					},
 					employment_period: {
-						start: {
-							en: '23-08-2020',
-							ro: '23-08-2020'
-						},
-						end: {
-							en: 'present',
-							ro: 'prezent'
-						}
+            en: '23-08-2020 - present',
+            ro: '23-08-2020 - prezent'
 					},
 					job_description: {
 						en:
