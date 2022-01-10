@@ -132,7 +132,7 @@ export default {
 					},
 					job_description: {
 						en:
-							'As a Junior Web Development Engineer, I worked in a multicultural and diverse team, made up of Romanian and Finnish people. I helped in improving and maintaining an internal tool, used by the upper management for KPI(Key Performance Indicators) creation, management, and tracking. With my help, the internal tool got a new, modern UI, along with major improvements to the UX. I also fixed various bugs, and investigated performance issues.',
+							'As a Junior Web Development Engineer, I worked in a multicultural and diverse team, made up of Romanian and Finnish people. I helped in improving and maintaining an internal tool, used by the upper management for KPI(Key Performance Indicators) creation, management, and tracking. With my help, the internal tool got a new, modern UI, along with major improvements to the UX. I also fixed various bugs and investigated performance issues.',
 						ro:
 							'Ca Junior Web Development Engineer, am lucrat într-o echipă multiculturală și diversă, formată din români și finlandezi. Am ajutat la îmbunătățirea și menținerea unui instrument intern, folosit de conducerea Nokia pentru crearea, gestionarea și urmărirea unor KPI (Key Performance Indicators). Cu ajutorul meu, instrumentul intern a obținut un UI modern si nou, împreună cu îmbunătățiri majore la UX. De asemenea, am remediat diverse erori și am investigat probleme de performanță.'
 					},
@@ -160,7 +160,7 @@ export default {
 					},
 					job_description: {
 						en:
-							'As a Full Stack Web Developer, I helped develop new features for internal tools used by Newpharma, the largest Belgian online pharmacy. As such, I developed my communication skills trough interacting with our Belgian clients. I developed tools used for customer support, order refunding, warehouse management, pharmacy management, as well as internal frameworks and libraries, such as our internal API library. I also helped reviewing code for my peers.',
+							'As a Full Stack Web Developer, I helped develop new features for internal tools used by Newpharma, the largest Belgian online pharmacy. As such, I developed my communication skills through interacting with our Belgian clients. I developed tools used for customer support, order refunding, warehouse management, pharmacy management, as well as internal frameworks and libraries, such as our internal API library. I also helped reviewing code for my peers.',
 						ro:
 							'În calitate de dezvoltator web Full Stack, am contribuit la dezvoltarea de noi funcții pentru instrumentele interne utilizate de Newpharma, cea mai mare farmacie online belgiană. Ca atare, mi-am dezvoltat abilitățile de comunicare prin interacțiunea cu clienții noștri belgieni. Am dezvoltat instrumente utilizate pentru asistența clienților, rambursarea comenzilor, gestionarea stocului depozitelor, stocului farmaciilor, precum și framework-uri și biblioteci interne, cum ar fi framework-ul nostru intern de PHP, sau biblioteca noastră de API internă. De asemenea, am ajutat la code review-uri.'
 					},
@@ -190,7 +190,7 @@ export default {
 					},
 					job_description: {
 						en:
-							"At UnifiedPost, we are developing a rapidly growing SaaS, thats is handling all aspects of payments and invoices for a certain enterprise. As a Full Stack Developer, I've been responsible for developing various internal API and features, including UI/UX changes.",
+							"At UnifiedPost, we are developing a rapidly growing SaaS, that is handling all aspects of payments and invoices for a certain enterprise. As a Full Stack Developer, I've been responsible for developing various internal API and features, including UI/UX changes.",
 						ro:
 							'La UnifiedPost, dezvoltăm un SaaS în creștere rapidă, care gestionează toate aspectele legate de plăți și facturi pentru o anumită întreprindere. În calitate de dezvoltator Full Stack, am fost responsabil pentru dezvoltarea diferitelor API și caracteristici interne, inclusiv modificări UI / UX.'
 					},
