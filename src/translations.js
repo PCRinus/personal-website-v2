@@ -167,8 +167,8 @@ export default {
 							ro: '23-08-2021'
 						},
 						end: {
-							en: '10.01.2022',
-							ro: '10.01.2022'
+							en: '10-01-2022',
+							ro: '10-01-2022'
 						}
 					},
 					job_description: {
@@ -185,21 +185,21 @@ export default {
 					location: 'Timișoara',
 					employment_period: {
 						start: {
-							en: '23-08-2021',
-							ro: '23-08-2021'
+							en: '10-01-2021',
+							ro: '10-01-2021'
 						},
 						end: {
-							en: '10.01.2022',
-							ro: '10.01.2022'
+							en: 'present',
+							ro: 'prezent'
 						}
 					},
 					job_description: {
 						en:
-							"At UnifiedPost, we are developing a rapidly growing SaaS, that is handling all aspects of payments and invoices for a certain enterprise. As a Full Stack Developer, I've been responsible for developing various internal API and features, including UI/UX changes.",
+							'Minim aute duis tempor aliqua consectetur ex ea tempor. Duis do aliqua labore minim qui pariatur esse occaecat minim eu voluptate veniam occaecat est. Enim velit deserunt magna ad exercitation reprehenderit ipsum aute proident ad pariatur veniam laboris labore. Nulla laboris proident velit enim qui cupidatat deserunt. Id dolore ipsum id ex. Qui est non aute aliquip tempor aute non minim consequat.',
 						ro:
-							'La UnifiedPost, dezvoltăm un SaaS în creștere rapidă, care gestionează toate aspectele legate de plăți și facturi pentru o anumită întreprindere. În calitate de dezvoltator Full Stack, am fost responsabil pentru dezvoltarea diferitelor API și caracteristici interne, inclusiv modificări UI / UX.'
+							'Eu velit ut voluptate deserunt labore irure ea incididunt. Fugiat dolor exercitation aliqua sunt sunt exercitation dolore ad quis. Reprehenderit ullamco labore cupidatat id mollit duis labore.'
 					},
-					used_technologies: 'Ruby, Rails, Angular, TypeScript'
+					used_technologies: 'NodeJS, Angular, JavaScript, TypeScript'
 				}
 			]
 		},
