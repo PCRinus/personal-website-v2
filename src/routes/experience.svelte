@@ -13,17 +13,13 @@
 			if (
 				DateTime.fromFormat(a.employment_period.start[$language], 'yyyy-mm-dd').toJSDate() <
 				DateTime.fromFormat(b.employment_period.start[$language], 'yyyy-mm-dd').toJSDate()
-			) {
-				console.log('a < b');
+			)
 				return -1;
-			}
 			if (
 				DateTime.fromFormat(a.employment_period.start[$language], 'yyyy-mm-dd').toJSDate() >
 				DateTime.fromFormat(b.employment_period.start[$language], 'yyyy-mm-dd').toJSDate()
-			) {
-				console.log('a > b');
+			)
 				return 1;
-			}
 			return 0;
 		});
 	};
