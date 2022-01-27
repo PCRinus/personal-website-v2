@@ -48,11 +48,15 @@
 </script>
 
 <div>
-	<h1 class="text-3xl lg:text-7xl subpixel-antialiased text-pink-600 dark:text-green-500">
-		{headers.job_header[$language]}
-	</h1>
+	<div class="flex flex-col md:flex-row justify-between">
+		<h1 class="text-3xl lg:text-7xl subpixel-antialiased text-pink-600 dark:text-green-500">
+			{headers.job_header[$language]}
+		</h1>
 
-	<OrderBy on:orderFirst={orderByFirstExperience} on:orderLast={orderByLatestExperience} />
+		<div class="w-44 md:w-auto">
+			<OrderBy on:orderFirst={orderByFirstExperience} on:orderLast={orderByLatestExperience} />
+		</div>
+	</div>
 
 	{#each jobs as job}
 		<Card>
