@@ -34,7 +34,7 @@
 </PrimaryButton>
 
 <div
-	class="{hidden} bg-zinc-100 dark:bg-zinc-700 text-base md:text-xl rounded-md px-4 py-2 mt-2 w-44"
+	class="{hidden} bg-zinc-100 dark:bg-zinc-700 text-base md:text-xl rounded-md px-4 py-2 mt-2"
 >
 	<ul>
 		<li class="my-1">
