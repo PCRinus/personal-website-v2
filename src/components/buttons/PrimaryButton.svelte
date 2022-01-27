@@ -18,5 +18,6 @@
 	<div class="flex items-center">
 		<slot name="icon" />
 		<slot name="text" />
+		<slot name="glyph" />
 	</div>
 </button>

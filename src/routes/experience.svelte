@@ -3,17 +3,47 @@
 	import { language } from '../stores';
 	import Card from '../components/card/Card.svelte';
 	import OrderBy from '../components/OrderBy.svelte';
+	import { DateTime } from 'luxon';
 
 	let headers = translations.pages.experiences;
 	let jobs = translations.pages.experiences.job_experience;
 
 	const orderByFirstExperience = () => {
-		console.log('first');
-		console.log(jobs);
+		jobs = jobs.sort((a, b) => {
+			if (
+				DateTime.fromFormat(a.employment_period.start[$language], 'yyyy-mm-dd').toJSDate() <
+				DateTime.fromFormat(b.employment_period.start[$language], 'yyyy-mm-dd').toJSDate()
+			) {
+				console.log('a < b');
+				return -1;
+			}
+			if (
+				DateTime.fromFormat(a.employment_period.start[$language], 'yyyy-mm-dd').toJSDate() >
+				DateTime.fromFormat(b.employment_period.start[$language], 'yyyy-mm-dd').toJSDate()
+			) {
+				console.log('a > b');
+				return 1;
+			}
+			return 0;
+		});
 	};
 
 	const orderByLatestExperience = () => {
-		console.log('last');
+		jobs = jobs.sort((a, b) => {
+			if (
+				DateTime.fromFormat(a.employment_period.start[$language], 'yyyy-mm-dd').toJSDate() <
+				DateTime.fromFormat(b.employment_period.start[$language], 'yyyy-mm-dd').toJSDate()
+			) {
+				return 1;
+			}
+			if (
+				DateTime.fromFormat(a.employment_period.start[$language], 'yyyy-mm-dd').toJSDate() >
+				DateTime.fromFormat(b.employment_period.start[$language], 'yyyy-mm-dd').toJSDate()
+			) {
+				return -1;
+			}
+			return 0;
+		});
 	};
 </script>
 

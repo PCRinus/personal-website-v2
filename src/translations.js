@@ -119,12 +119,12 @@ export default {
 					location: 'Timișoara',
 					employment_period: {
 						start: {
-							en: '01-12-2019',
-							ro: '01-12-2019'
+							en: '2019-12-01',
+							ro: '2019-12-01'
 						},
 						end: {
-							en: '15-09-2020',
-							ro: '15-09-2020'
+							en: '2020-09-15',
+							ro: '2020-09-15'
 						}
 					},
 					job_description: {
@@ -141,12 +141,12 @@ export default {
 					location: 'Timișoara',
 					employment_period: {
 						start: {
-							en: '15-09-2020',
-							ro: '15-09-2020'
+							en: '2020-09-15',
+							ro: '2020-09-15'
 						},
 						end: {
-							en: '23-08-2021',
-							ro: '23-08-2021'
+							en: '2021-08-23',
+							ro: '2021-08-23'
 						}
 					},
 					job_description: {
@@ -163,12 +163,12 @@ export default {
 					location: 'Timișoara',
 					employment_period: {
 						start: {
-							en: '23-08-2021',
-							ro: '23-08-2021'
+							en: '2021-08-23',
+							ro: '2021-08-23'
 						},
 						end: {
-							en: '10-01-2022',
-							ro: '10-01-2022'
+							en: '2022-01-10',
+							ro: '2022-01-10'
 						}
 					},
 					job_description: {
@@ -185,8 +185,8 @@ export default {
 					location: 'Timișoara',
 					employment_period: {
 						start: {
-							en: '10-01-2021',
-							ro: '10-01-2021'
+							en: '2022-01-10',
+							ro: '2022-01-10'
 						},
 						end: {
 							en: 'present',

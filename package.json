@@ -26,6 +26,6 @@
   "type": "module",
   "dependencies": {
     "@tailwindcss/forms": "^0.4.0",
-    "moment": "^2.29.1"
+    "luxon": "^2.3.0"
   }
 }
