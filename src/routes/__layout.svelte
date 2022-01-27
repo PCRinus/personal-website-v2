@@ -36,7 +36,7 @@
 
 <div class="content lg:text-2xl" style="--uper-content-height: {`${$upperContentHeight}px`}">
 	<div class="upper-content">
-		<Navbar segment={$page.path} />
+		<Navbar segment={$page.url.pathname} />
 		<Swoosh themeChange={$theme} color={$theme === 'light' ? 'AFD3D5' : '5A5D72'} />
 	</div>
 	<div class="lower-content">

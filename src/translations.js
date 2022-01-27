@@ -33,6 +33,22 @@ export default {
 				en: 'Powered by ☕',
 				ro: 'Cu ajutorul ☕'
 			}
+		},
+		order_by: {
+			button_text: {
+				en: 'Order by',
+				ro: 'Ordonează după'
+			},
+			dropdown: {
+				first: {
+					en: 'First jobs',
+					ro: 'Primele joburi'
+				},
+				last: {
+					en: 'Latest jobs',
+					ro: 'Ultimele joburi'
+				}
+			}
 		}
 	},
 	pages: {
@@ -114,21 +130,18 @@ export default {
 			},
 			job_experience: [
 				{
-					job_title: {
-						en: 'Junior Software Development Engineer',
-						ro: 'Junior Software Development Engineer'
-					},
-					employer: {
-						en: 'Nokia',
-						ro: 'Nokia'
-					},
-					location: {
-						en: 'Timișoara',
-						ro: 'Timișoara'
-					},
+					job_title: 'Junior Software Development Engineer',
+					employer: 'Nokia',
+					location: 'Timișoara',
 					employment_period: {
-						en: '01-12-2019 - 15-09-2020',
-						ro: '01-12-2019 - 15-09-2020'
+						start: {
+							en: '2019-12-01',
+							ro: '2019-12-01'
+						},
+						end: {
+							en: '2020-09-15',
+							ro: '2020-09-15'
+						}
 					},
 					job_description: {
 						en:
@@ -136,27 +149,21 @@ export default {
 						ro:
 							'Ca Junior Web Development Engineer, am lucrat într-o echipă multiculturală și diversă, formată din români și finlandezi. Am ajutat la îmbunătățirea și menținerea unui instrument intern, folosit de conducerea Nokia pentru crearea, gestionarea și urmărirea unor KPI (Key Performance Indicators). Cu ajutorul meu, instrumentul intern a obținut un UI modern si nou, împreună cu îmbunătățiri majore la UX. De asemenea, am remediat diverse erori și am investigat probleme de performanță.'
 					},
-					used_technologies: {
-						en: 'C#(.NET), JavaScript(jQuery), CSS(Bootstrap 3), Azure, SQL',
-						ro: 'C#(.NET), JavaScript(jQuery), CSS(Bootstrap 3), Azure, SQL'
-					}
+					used_technologies: 'C#(.NET), JavaScript(jQuery), CSS(Bootstrap 3), Azure, SQL'
 				},
 				{
-					job_title: {
-						en: 'Full Stack Developer',
-						ro: 'Full Stack Developer'
-					},
-					employer: {
-						en: 'SmartValue Services',
-						ro: 'SmartValue Services'
-					},
-					location: {
-						en: 'Timișoara',
-						ro: 'Timișoara'
-					},
+					job_title: 'Full Stack Developer',
+					employer: 'SmartValue Services',
+					location: 'Timișoara',
 					employment_period: {
-						en: '15-09-2020 - 05-08-2021',
-						ro: '15-09-2020 - 05-08-2021'
+						start: {
+							en: '2020-09-15',
+							ro: '2020-09-15'
+						},
+						end: {
+							en: '2021-08-23',
+							ro: '2021-08-23'
+						}
 					},
 					job_description: {
 						en:
@@ -164,29 +171,21 @@ export default {
 						ro:
 							'În calitate de dezvoltator web Full Stack, am contribuit la dezvoltarea de noi funcții pentru instrumentele interne utilizate de Newpharma, cea mai mare farmacie online belgiană. Ca atare, mi-am dezvoltat abilitățile de comunicare prin interacțiunea cu clienții noștri belgieni. Am dezvoltat instrumente utilizate pentru asistența clienților, rambursarea comenzilor, gestionarea stocului depozitelor, stocului farmaciilor, precum și framework-uri și biblioteci interne, cum ar fi framework-ul nostru intern de PHP, sau biblioteca noastră de API internă. De asemenea, am ajutat la code review-uri.'
 					},
-					used_technologies: {
-						en:
-							'PHP(vanilla and CORE - our internal framework), SQL(MySQL), JavaScript(vanilla JS and jQuery, Handlebars)',
-						ro:
-							'PHP(vanilla și CORE - framework-ul nostru intern), SQL(MySQL), JavaScript(vanilla JS și jQuery, Handlebars)'
-					}
+					used_technologies: 'PHP, SQL(MySQL), JavaScript, jQuery, HandlebarsJS'
 				},
 				{
-					job_title: {
-						en: 'Full Stack Developer',
-						ro: 'Full Stack Developer'
-					},
-					employer: {
-						en: 'UnifiedPost',
-						ro: 'UnifiedPost'
-					},
-					location: {
-						en: 'Timișoara',
-						ro: 'Timișoara'
-					},
+					job_title: 'Full Stack Developer',
+					employer: 'UnifiedPost',
+					location: 'Timișoara',
 					employment_period: {
-						en: '23-08-2020 - present',
-						ro: '23-08-2020 - prezent'
+						start: {
+							en: '2021-08-23',
+							ro: '2021-08-23'
+						},
+						end: {
+							en: '2022-01-10',
+							ro: '2022-01-10'
+						}
 					},
 					job_description: {
 						en:
@@ -194,10 +193,29 @@ export default {
 						ro:
 							'La UnifiedPost, dezvoltăm un SaaS în creștere rapidă, care gestionează toate aspectele legate de plăți și facturi pentru o anumită întreprindere. În calitate de dezvoltator Full Stack, am fost responsabil pentru dezvoltarea diferitelor API și caracteristici interne, inclusiv modificări UI / UX.'
 					},
-					used_technologies: {
-						en: 'Ruby, Rails, Angular, TypeScript',
-						ro: 'Ruby, Rails, Angular, TypeScript'
-					}
+					used_technologies: 'Ruby, Rails, Angular, TypeScript'
+				},
+				{
+					job_title: 'Full Stack Developer',
+					employer: 'Endava',
+					location: 'Timișoara',
+					employment_period: {
+						start: {
+							en: '2022-01-10',
+							ro: '2022-01-10'
+						},
+						end: {
+							en: 'present',
+							ro: 'prezent'
+						}
+					},
+					job_description: {
+						en:
+							'Minim aute duis tempor aliqua consectetur ex ea tempor. Duis do aliqua labore minim qui pariatur esse occaecat minim eu voluptate veniam occaecat est. Enim velit deserunt magna ad exercitation reprehenderit ipsum aute proident ad pariatur veniam laboris labore. Nulla laboris proident velit enim qui cupidatat deserunt. Id dolore ipsum id ex. Qui est non aute aliquip tempor aute non minim consequat.',
+						ro:
+							'Eu velit ut voluptate deserunt labore irure ea incididunt. Fugiat dolor exercitation aliqua sunt sunt exercitation dolore ad quis. Reprehenderit ullamco labore cupidatat id mollit duis labore.'
+					},
+					used_technologies: 'NodeJS, Angular, JavaScript, TypeScript'
 				}
 			]
 		},
@@ -260,7 +278,7 @@ export default {
 						en:
 							'This app is used by Davino Wineries for a future wine label concept. The label will use a QR code generated by this app, with customizable redirects to various other resources picked by Davino.',
 						ro:
-							"Această aplicație este folosită de Davino Wineries pentru un viitor concept de etichetă de vin. Eticheta va folosi un cod QR generat de această aplicație, cu redirecționări personalizabile către diverse alte resurse alese de Davino."
+							'Această aplicație este folosită de Davino Wineries pentru un viitor concept de etichetă de vin. Eticheta va folosi un cod QR generat de această aplicație, cu redirecționări personalizabile către diverse alte resurse alese de Davino.'
 					},
 					used_technologies: {
 						en: 'JavaScript, Svelte, Netlify',
