@@ -33,6 +33,22 @@ export default {
 				en: 'Powered by ☕',
 				ro: 'Cu ajutorul ☕'
 			}
+		},
+		order_by: {
+			button_text: {
+				en: 'Order by',
+				ro: 'Ordonează după'
+			},
+			dropdown: {
+				first: {
+					en: 'First jobs',
+					ro: 'Primele joburi'
+				},
+				last: {
+					en: 'Latest jobs',
+					ro: 'Ultimele joburi'
+				}
+			}
 		}
 	},
 	pages: {

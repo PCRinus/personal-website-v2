@@ -44,7 +44,7 @@
 </script>
 
 <div>
-	<div class="flex flex-col md:flex-row justify-between">
+	<div class="flex flex-col md:flex-row justify-between md:items-center">
 		<h1 class="text-3xl lg:text-7xl subpixel-antialiased text-pink-600 dark:text-green-500">
 			{headers.job_header[$language]}
 		</h1>
