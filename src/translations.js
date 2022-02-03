@@ -25,9 +25,9 @@ export default {
 		footer: {
 			text: {
 				en:
-					'Designed and developed by <strong class="text-pink-700 dark:text-green-500"> </br> Mircea Casapu</strong> © 2021',
+					'Designed and developed by <strong class="text-pink-700 dark:text-green-500"> </br> Mircea Casapu</strong> © 2021 - present',
 				ro:
-					'Proiectat si dezvoltat de <strong class="text-pink-700 dark:text-green-500"> </br> Mircea Casapu</strong> © 2021'
+					'Proiectat si dezvoltat de <strong class="text-pink-700 dark:text-green-500"> </br> Mircea Casapu</strong> © 2021 - prezent'
 			},
 			coffee: {
 				en: 'Powered by ☕',
@@ -360,8 +360,8 @@ export default {
 		},
 		contact: {
 			form_header: {
-				en: 'Get in touch 👋🏼 for work collaboration or any other questions.',
-				ro: 'Contactează-mă 👋🏼 pentru colaborări, sau pentru orice altă întrebare.'
+				en: 'Get in touch for work collaboration 👋🏼',
+				ro: 'Contactează-mă pentru colaborări 👋🏼'
 			},
 			form_label_name: {
 				en: 'Name',

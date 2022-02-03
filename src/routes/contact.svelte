@@ -8,7 +8,7 @@
 	let form = translations.pages.contact;
 </script>
 
-<h1 class="text-3xl lg:text-5xl subpixel-antialiased text-pink-600 dark:text-green-500">
+<h1 class="text-3xl lg:text-7xl subpixel-antialiased text-pink-600 dark:text-green-500">
 	{form.form_header[$language]}
 </h1>
 
@@ -41,7 +41,7 @@
 		</label>
 		<div>
 			<PrimaryButton>
-				<span slot="icon">✉️</span>
+				<span slot="icon"></span>
 				<span slot="text">
 					{form.form_submit_button[$language]}
 				</span>

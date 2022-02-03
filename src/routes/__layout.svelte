@@ -8,7 +8,7 @@
 	import { page } from '$app/stores';
 
 	onMount(async () => {
-    $upperContentHeight = document.getElementsByClassName('upper-content')[0].clientHeight;
+		$upperContentHeight = document.getElementsByClassName('upper-content')[0].clientHeight;
 		let currentTheme = await Cookies.getCookie('theme');
 		let currentLanguage = await Cookies.getCookie('language');
 
@@ -54,6 +54,7 @@
 
 	:global(html, body) {
 		height: 100%;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
 	:global(body) {
 		background-color: white;
